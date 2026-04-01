@@ -1,27 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Student Project</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <div class="logo">My Website</div>
+  <body class="home-page">
+    <header class="header">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg"
+        alt="Logo"
+        class="logo-image"
+      />
+      <!-- <div class="logo">My Website</div> -->
+      <nav class="nav">
+        <a href="#">Politics</a>
+        <a href="#">Business</a>
+        <a href="#">Entertainment</a>
+        <img
+          src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png"
+          alt="search icon"
+          class="search-icon"
+        />
+      </nav>
+    </header>
 
-    <nav class="nav">
-      <a href="#">Home</a>
-      <a href="#">Explore</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+    <main class="content">
+      <div class="main-layout">
+        <section class="main-article">
+          <h1 style="font-size: 2.2rem">Top Story</h1>
+          <div class="main-art-container">
+            <img
+              src="images/homepageMainArt.png"
+              alt="iranArt"
+              class="main-art"
+            />
+          </div>
+          <p style="margin-top: 16px; margin-left: 4px">
+            The war in Iran is in its fourth week: here's what you should know
+          </p>
+        </section>
 
-  <main class="content">
-    <h1>Welcome</h1>
-    <p>This is a simple responsive layout.</p>
-  </main>
-</body>
+        <aside class="trending">
+          <div class="trending-header">
+            <h2>Trending</h2>
+          </div>
+          <ul>
+            <li>
+              <a href="index.html"
+                >Triple Threat: Geopolitical conflict, shifting trade policies,
+                and volatile AI transition</a
+              >
+            </li>
+            <li>
+              <a href="index.html"
+                >Trump makes false claims about the economy, elections and crime
+                in State of the Union</a
+              >
+            </li>
+            <li>
+              <a href="index.html"
+                >Trump threatens to deploy ICE agents to airports Monday if
+                funding deal isn’t reached</a
+              >
+            </li>
+            <li>
+              <a href="index.html"
+                >A year into Trump’s second term, Iowa voters offer clues for
+                the midterm elections</a
+              >
+            </li>
+          </ul>
+        </aside>
+        <aside class="live-tab">
+          <section class="live-content">
+            <div class="live-video">
+              <img
+                src="images/liveVidThumb.png"
+                alt="live video"
+                class="live-video-placeholder"
+              />
+              <p>Caption????</p>
+            </div>
+            <div><h2>Live Updates</h2>
+            <p class="live-updates">article name 1</p><p class="live-updates" >article name 2</p></div>
+          </section>
+        </aside>
+      </div>
+    </main>
+  </body>
 </html>
