@@ -18,32 +18,55 @@ body {
 } */
 /* HEADER */
 .header {
-  position: relative;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
   padding: 10px;
   background: #bababa;
   color: white;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-right {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 10px; */
+  align-items: center;
+  height:100%;
+  width: 20%;
+  gap: 10px;
+}
+
 .logo-image {
-  position: absolute;
-  inset-inline-start: 20px;
-  top: 50%;
-  transform: translateY(-50%);
   height: 56px;
   width: auto;
   max-width: 140px;
 }
 
- .search-icon {
-  position: absolute;
-  right: 24px;
-  margin-top: 32px;
-  transform: translateY(-50%);
+.liveButton {
+  background-color: #00fbff;
+  color: #000000;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search-icon {
   width: 36px;
   height: 36px;
+}
+
+.user-profile-icon {
+  max-width: 25%;
+  height: 42px;
 }
 
 .nav {
@@ -51,6 +74,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-height: 50px;
   max-width: 700px;
   text-align: center;
   gap: 16px;
@@ -175,9 +199,10 @@ section> p{
   height: auto;
 }
 .live-updates {
-  font-size: 1rem;
-  margin-top: 12px;
-  margin-bottom: 8px;
+  font-size: 1.1rem;
+  /* margin-top: 12px;
+  margin-bottom: 8px; */
+  padding:18px;
   border-top: 2px solid #000000;
 }
 /* MOBILE RESPONSIVE */
