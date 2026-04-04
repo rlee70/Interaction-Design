@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>New Page Title</title>
-     <link rel ="stylesheet" href="vArticleView.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Politics Article View</title>
+    <link rel ="stylesheet" href="vArticleView.css">
 </head>
 <body>
+     <body class="home-page">
     <header class="header">
       <div class="header-left">
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg"
           alt="Logo"
@@ -16,9 +24,9 @@
       </div>
       <!-- <div class="logo">My Website</div> -->
       <nav class="nav">
-        <a href="/archives/aPolitics.html">Politics</a>
-        <a href="/archives/aBusiness.html">Business</a>
-        <a href="/archives/aEntertainment.html">Entertainment</a>
+        <a href="/archives/aPolitics.html" >Politics</a>
+      <a href="/archives/aBusiness.html">Business</a>
+      <a href="/archives/aEntertainment.html">Entertainment</a>
       </nav>
       <div class="header-right">
         <img
@@ -27,15 +35,15 @@
           class="search-icon"
         />
         <button class="liveButton">LIVE</button>
-        
-        <img 
-          class="user-profile-icon"
-          src="images/profileIcon.png"
+        <!--
+        <img
+          src="/images/profileIcon.png"
           alt="user profile icon"
-          
-        />
+          class="user-profile-icon"
+        />-->
       </div>
     </header>
+
     <div class="article-Title">
     <h3><a href="/archives/aPolitics.html">Politics</a> -> Federal Government</h3>
     <h2>Fact Check: Trump makes false claims about the economy about the economy and 
@@ -43,25 +51,29 @@
     <p><i>15 Min Read</i></p>
     </div>
     <div class="article-ImgDesc">
-    <img src="images/politicsImg.avif">
+    <img src="/images/politicsImg.avif">
     <p>Updated Feb 22,2026</p>
     <p>By CNN Staff</p>
     </div>
 
     <div class="article-Content">
+      <br>
         <p> President Donald Trump made numerous false or misleading claims in his State of the Union address on Tuesday night.
         Many of them were long-debunked falsehoods familiar from his rallies, interviews and social media posts. 
         These include various lies disparaging the fairness of US elections, his false claim that he ended wars that were never actually wars or never actually ended, and his fictional “$18 trillion” figure for supposed investment in the US over the past year.
         The subject on which he was most frequently inaccurate was the economy. Among other things, Trump overstated the performance of the economy during this presidential term to date, overstated the inflation he inherited from the Biden administration, 
         used highly misleading figures when discussing gasoline prices, and wrongly asserted, twice, that foreign countries are paying the tariffs that are actually being paid by US importers.
         Here is a fact check of some of <b>Trump’s remarks: </b></p>
+        <br>
         <h2 id = article-ConHeaders >Economy and Inflation</h2>
+        <br>
         <h3 id = article-ConHeaders><b>Fact check: Trump falsely claims US has secured ‘$18 trillion’ in investments </b></h3>
         <p> Trump repeated his regular false claim that he has secured $18 trillion in investments in the US since returning to office, 
             saying, “In 12 months, I secured commitments for more than $18 trillion pouring in from all over the globe.”
             The $18 trillion figure is fiction. As of the night of Trump’s address, the White House’s own website said the figure for “major investment announcements” 
             during this Trump term was “$9.7 trillion,” and even that is a major exaggeration; a detailed CNN review in October found the White House was counting trillions of dollars in vague investment pledges, pledges that were about “bilateral trade” or “economic exchange” rather than investment in the US and vague statements that didn’t even rise to the level of pledges.
             <br><i>From CNN’s Daniel Dale</i> </p>
+        <br>
         <h3 id="article-ConHeaders"><b>Fact check: Trump’s misleading claims on gasoline prices</b></h3>
         <p> Trump claimed gas prices are “now below $2.30 a gallon in most states, and in some places, $1.99 a gallon.” 
             But no state had an average gas price on Tuesday below $2.37 per gallon, according to AAA; only two states had an average below $2.50 per gallon. And while there are some individual gas stations selling gas for below $2 per gallon, 
@@ -73,7 +85,8 @@
             Trump was fact-checked on this subject by an attendee at the Iowa speech he was referring to. When he spoke of gas in Iowa being $1.95 or $1.85 per gallon, someone in the crowd shouted, “No, $2.63,” 
             according to CNN reporter Steve Contorno, who was on scene. Contorno saw that the gas station right outside the venue where Trump spoke was selling for $2.69 per gallon. 
             <br><i>From CNN’s Daniel Dale</i></p>
-         <h3 id="article-ConHeaders"><b>Fact check: Trump’s misleading claims on gasoline prices</b></h3>
+        <br>
+         <h3 id="article-ConHeaders"><b>Fact check: Trump falsely claims he inherited record inflation </b></h3>
         <p> Trump falsely claimed that when he gave his previous address to Congress early last year, he had “just inherited … inflation at record levels.” He added a bit later that former President Joe Biden and his congressional allies “gave us the worst inflation in the history of our country.”
             Trump didn’t inherit the worst inflation in US history, and Biden never had the worst inflation in US history. The year-over-year inflation rate in Biden’s last full month in office, December 2024, was 2.9%, and the rate in the month in which Trump took over partway through, January 2025, 
             was 3.0%; the most recent rate, for January 2026, is 2.4%. The rate did hit a 40-year high, 9.1%, in June 2022, but that was far from the all-time high of 23.7%, 
