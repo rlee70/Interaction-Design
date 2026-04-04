@@ -75,12 +75,12 @@ body {
 }
 
 .page-header h1 {
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 10px;
 }
 
 page-header h2 {
-  font-size: 24px;
+  font-size: 32px;
   margin-bottom: 40px;
 }
 
@@ -89,7 +89,7 @@ page-header h2 {
 }
 
 story-section h3 {
-  font-size: 22px;
+  font-size: 28px;
   margin-bottom: 20px;
 }
 
@@ -100,14 +100,21 @@ story-section h3 {
   overflow: hidden;    /*not adding scrolling feature yet to keep page static for now */
 }
 
+.card {
+  width: 320px;
+  flex-shrink: 0;
+}
+
 .card img {
   width: 100%;  /*image fills width of card size */
   display: block;
   margin-bottom: 10px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
 }
 
 .card p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.4;  /*adding space for increased readabilty */
 }
 
@@ -127,12 +134,12 @@ story-section h3 {
 }
 
 .column h4 {
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 25px;
 }
 
 .column p {
-  font-size: 15px;
+  font-size: 16px;
   margin-bottom: 15px;
   line-height: 1.5;
 }
@@ -172,6 +179,7 @@ story-section h3 {
 .footer-bottom {
   text-align: center;
   font-size: 12px;
+  color: white;
 }
 
 
