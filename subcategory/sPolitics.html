@@ -4,35 +4,178 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CNN Redesign</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="sStyles.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="logo">CNN Politics</div>
+    <div class="header-left">
+        <span class="menu-icon">☰</span>
+        <div class="logo">CNN Politics</div>
+    </div>
 
-    <nav class="nav">
+    <nav class="nav-main">
             <a href="/archives/aPolitics.html" target="_blank">Politics</a>
             <a href="/archives/aBusiness.html" target="_blank">Business</a>
             <a href="/archives/aEntertainment.html" target="_blank">Entertainment</a>
     </nav>
+
+    <div class="header-right">
+        <span class="icon-search">Search</span>
+        <div class="live-btn">LIVE</div>
+        <span class="icon-profile">Profile</span>
+    </div>
   </header>
 
   <main class="content">
-    <h1>Politics</h1>
-    <h2>US Government</h2>
-    <p>This is a simple responsive layout for the Subcategory archives page.</p>
-  </main>
 
-  <footer>
-        <div class="logo">CNN</div>
-        
-        <nav class="nav">
-            <a href="/archives/aPolitics.html" target="_blank">Politics</a>
-            <a href="/archives/aBusiness.html" target="_blank">Business</a>
-            <a href="/archives/aEntertainment.html" target="_blank">Entertainment</a>
-            <a href="#"target="_blank">Contact Us</a>
-        </nav>
-  </footer>
+    <div class="page-header">
+        <h1>Politics</h1>
+        <h2>US Government: Federal Policies</h2>
+        <p>This is a simple responsive layout for the Subcategory archives page.</p>
+    </div>
+
+    <section class="story-section">
+        <br> <br> <br>
+        <h3>Top Stories</h3>
+        <div class="card-row">
+            <div class="card">
+                <img src="" alt="Congress Image">
+                <p>US Politics: news, videos, reports and analysis</p>
+            </div>
+                        <div class="card">
+                <img src="" alt="Congress Image">
+                <p>US Politics: news, videos, reports and analysis</p>
+            </div>
+                        <div class="card">
+                <img src="" alt="Congress Image">
+                <p>US Politics: news, videos, reports and analysis</p>
+            </div>
+                        <div class="card">
+                <img src="" alt="Congress Image">
+                <p>US Politics: news, videos, reports and analysis</p>
+            </div>
+                        <div class="card">
+                <img src="" alt="Congress Image">
+                <p>US Politics: news, videos, reports and analysis</p>
+            </div>
+                        <div class="card">
+                <img src="" alt="Congress Image">
+                <p>US Politics: news, videos, reports and analysis</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-section">
+        <br> <br> <br>
+        <h3>Top Videos</h3>
+        <div class="card-row">
+            <div class="card">
+                <video width="420" height="340" controls>
+                    <source src="/Videos/cnnPolitics.mp4">
+                    Your browser does not support the video tag. 
+                </video>
+                <p>US allies reject Trump’s call for help in the Strait of Hormuz</p>
+            </div>
+             <div class="card">
+                <video width="420" height="340" controls>
+                    <source src="/Videos/cnnPolitics.mp4">
+                    Your browser does not support the video tag. 
+                </video>
+                <p>US allies reject Trump’s call for help in the Strait of Hormuz</p>
+            </div>
+             <div class="card">
+                <video width="420" height="340" controls>
+                    <source src="/Videos/cnnPolitics.mp4">
+                    Your browser does not support the video tag. 
+                </video>
+                <p>US allies reject Trump’s call for help in the Strait of Hormuz</p>
+            </div>
+             <div class="card">
+                <video width="420" height="340" controls>
+                    <source src="/Videos/cnnPolitics.mp4">
+                    Your browser does not support the video tag. 
+                </video>
+                <p>US allies reject Trump’s call for help in the Strait of Hormuz</p>
+            </div>
+             <div class="card">
+                <video width="420" height="340">
+                    <source src="/Videos/cnnPolitics.mp4">
+                    Your browser does not support the video tag. 
+                </video>
+                <p>US allies reject Trump’s call for help in the Strait of Hormuz</p>              
+            </div>
+        </div>
+    </section>
+
+    <section class="headlines">
+        <div class="column">
+            <br> <br> <br>
+            <h3>Latest Headlines</h3> <br>
+            <h4>Federal Policies</h4>
+            <p>White House Unveils National AI Framework; Urges Congress to Preempt State Laws</p>
+            <p>New Executive Order Targets Deceptive "Made in America" Digital Advertising</p>
+            <p>Federal "Task Force to Eliminate Fraud" Launched to Oversee Benefit Programs</p>        
+        </div>
+
+        <div class="column">
+            <h3>Analysis</h3>
+            <h4>United Nations</h4>
+            <p>Guterres Issues "Code Red" for Middle East; UN Security Council Condemns Regional Escalation</p>
+            <p>UN Launches "Humanitarian Compact" to Overhaul Strained Global Aid System</p>
+            <p>Landmark UN Report Warns Gender Inequality is "Weaponizing" the Global Water Crisis</p>
+      </div>
+    </section>
+    
+    </main>
+
+
+
+   
+  <footer class="footer">
+    <div class="footer-links-grid">
+      
+      <div class="footer-column">
+        <h4>US</h4>
+        <a href="#">Crime & Justice</a>
+        <a href="#">Immigration</a>
+        <a href="#">Education</a>
+        <a href="#">Transportation</a>
+        <a href="#">Race & Identity</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>World</h4>
+        <a href="#">Africa</a>
+        <a href="#">Americas</a>
+        <a href="#">Asia</a>
+        <a href="#">Australia</a>
+        <a href="#">China</a>
+        <a href="#">Europe</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Politics</h4>
+        <a href="#">Trump</a>
+        <a href="#">Facts First</a>
+        <a href="#">CNN Polls</a>
+        <a href="#">Election</a>
+        <a href="#">Calendar</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Business</h4>
+        <a href="#">Tech</a>
+        <a href="#">Media</a>
+        <a href="#">Calculators</a>
+        <a href="#">Videos</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copywriter Info</p>
+    </div>
+  </footer> 
 </body>
 </html>
