@@ -16,10 +16,10 @@ img{
   margin-left:2%;
   width:30%;
 }
-/*
-a{
 
-}*/
+a,a:hover{
+    color:#000000
+}
 
 /* .trending a:visited {
   color: #000000;
