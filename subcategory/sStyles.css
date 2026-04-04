@@ -1,0 +1,192 @@
+/* BASIC RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE STYLES */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color:#000000;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #333;
+  color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items:center;
+  gap: 20px;  /*space between menu icon and logo*/
+}
+
+.logo {
+  background-color:crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 10px;
+}
+
+.nav-main {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-main a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.liv-btn {
+  background-color: crimson;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+
+/* Main CONTENT Format */
+.content {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+page-header h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+
+.story-section {
+  margin-bottom: 50px;
+}
+
+story-section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/*creating horizontal row for cards */
+.card-row {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;    /*not adding scrolling feature yet to keep page static for now */
+}
+
+.card {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;  /*image fills width of card size */
+  display: block;
+  margin-bottom: 10px;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.4;  /*adding space for increased readabilty */
+}
+
+.two-column-section {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.column {
+  flex: 1; /*columns take up the same amount of space*/
+}
+
+.column h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.column h4 {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.column p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/*Footer formatting */
+.footer {
+  background-color: black;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.footer-links-grid {
+  display: flex;
+  justify-content: center;  /*centers the grid of columns*/
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;  /*stacks the links vertically*/
+  align-items: center;  /*centers text inside column*/
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
