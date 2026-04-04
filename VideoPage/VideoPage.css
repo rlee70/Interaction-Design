@@ -219,3 +219,44 @@ section> p{
     width: 100%;
   }
 }
+
+.mainSection {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 24px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumbs p {
+  font-size: 20pt;
+  color:#000000;
+  
+}
+
+.videoSection video{
+  padding: 15px;
+}
+
+.relatedStories img{
+  width:120px;
+  height: auto;
+  padding: 5px;
+}
+
+.relatedStories h2{
+  width:100%;
+  height: auto;
+  font-size: medium;
+  padding: 5px;
+}
+
+.relatedStories .article{
+width: 100px;
+text-align: center;
+margin: 0 auto 20px;
+
+
+}
+
