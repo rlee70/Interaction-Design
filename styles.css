@@ -44,7 +44,7 @@ h3 {
 /* .trending a:visited {
   color: #000000;
 } */
-/* HEADER */  
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -295,6 +295,44 @@ figcaption {
 .article figcaption br {
   display: none;
 }
+/*Footer formatting */
+.footer {
+  background-color: black;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.footer-links-grid {
+  display: flex;
+  justify-content: center; /*centers the grid of columns*/
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column; /*stacks the links vertically*/
+  align-items: center; /*centers text inside column*/
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
 @media (max-width: 900px) {
   .article-display {
     grid-template-columns: repeat(2, minmax(0, 1fr));
