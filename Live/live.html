@@ -1,47 +1,136 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Project</title>
-    <link rel="stylesheet" href="live.css">
-    </head>
-    <!--Section taken from homepage-->
-    <body class="home-page">
-        <header class="header">
-        <div class="header-left">
-            <img
-            src="https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg"
-            alt="Logo"
-            class="logo-image"
-            />
-        </div>
-        <!-- <div class="logo">My Website</div> -->
-        <nav class="nav">
-            <a href="#">Politics</a>
-            <a href="#">Business</a>
-            <a href="#">Entertainment</a>
-        </nav>
-        <div class="header-right">
-            <img
-            src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png"
-            alt="search icon"
-            class="search-icon"
-            />
-            <button class="liveButton">LIVE</button>
-        </div>
-    </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Project</title>
+  <link rel="stylesheet" href="live.css">
+</head>
+<!--Section taken from homepage-->
+  <body class="home-page">
+    <header class="header">
+    <div class="header-left">
+        <span class="menu-icon">☰</span>
+        <div class="logo">CNN Business</div>
+    </div>
 
-        <!--New section for video-->
+    <nav class="nav-main">
+            <a href="/archives/aPolitics.html" target="_blank">Politics</a>
+            <a href="/archives/aBusiness.html" target="_blank">Business</a>
+            <a href="/archives/aEntertainment.html" target="_blank">Entertainment</a>
+    </nav>
+
+    <div class="header-right">
+        <span class="icon-search">Search</span>
+        <div class="live-btn">LIVE</div>
+        <span class="icon-profile">Profile</span>
+    </div>
+  </header>
+
+    <!--New section for video-->
+    <main>
+      <section class="breadcrumbs">
+        <p> Buisness > World markets </p>
+      </section>
+
+      <div class="contentWrapper">
+        <div class="mainSection">
+          <!--Breadcrumbs-->  
+          
+
+         <!--New section for video-->
         <main>
         
             <!--Video Section -->
-            <section class="videoSection">
+            <section class="liveVideoSection">
                 <video autoplay muted playsinline conrols width="100%">
-                <source src="/Videos/cnnLIVE.mp4" type="video/mp4">
+                <source src="/Resources/Videos/cnnLIVE.mp4" type="video/mp4">
                 </video>
             </section>
+        
+        </div>
+        <section class="category-section">
+      <h2 class="section-title">Find News By Category</h2>
+      <div class="category-grid">
+ 
+        <div class="category-column">
+          <h4>US Politics</h4>
+          <a href="#">Federal Government</a>
+          <a href="#">2026 Elections</a>
+          <a href="#">Epstein Files</a>
+          <a href="#">Federal Policies</a>
+          <a href="#">Local News - By ZIP Code</a>
+        </div>
+ 
+        <div class="category-column">
+          <h4>World News</h4>
+          <a href="#">United Nations</a>
+          <a href="#">2026 Elections</a>
+          <a href="#">Foreign Policy</a>
+          <a href="#">Ukraine/Russia</a>
+          <a href="#">Gaza/Palestine</a>
+        </div>
+ 
+        <div class="category-column">
+          <h4>Technology</h4>
+          <a href="#">Techno-Politics</a>
+          <a href="#">Digital Rights and Surveillance</a>
+          <a href="#">Cybersecurity</a>
+          <a href="#">Nvidia</a>
+          <a href="#">Infrastructure</a>
+        </div>
+ 
+      </div>
+    </section>
+    </main>
+              <footer class="footer">
+    <div class="footer-links-grid">
+      
+      <div class="footer-column">
+        <h4>US</h4>
+        <a href="#">Crime & Justice</a>
+        <a href="#">Immigration</a>
+        <a href="#">Education</a>
+        <a href="#">Transportation</a>
+        <a href="#">Race & Identity</a>
+      </div>
 
-        </main>
-    </body>
-    </html>
+      <div class="footer-column">
+        <h4>World</h4>
+        <a href="#">Africa</a>
+        <a href="#">Americas</a>
+        <a href="#">Asia</a>
+        <a href="#">Australia</a>
+        <a href="#">China</a>
+        <a href="#">Europe</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Politics</h4>
+        <a href="#">Trump</a>
+        <a href="#">Facts First</a>
+        <a href="#">CNN Polls</a>
+        <a href="#">Election</a>
+        <a href="#">Calendar</a>
+      </div>
+
+      <div class="footer-column">
+        <h4>Business</h4>
+        <a href="#">Tech</a>
+        <a href="#">Media</a>
+        <a href="#">Calculators</a>
+        <a href="#">Videos</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copywriter Info</p>
+    </div>
+  </footer> 
+  <script src="/hamburgerScript.js"></script>
+</body>
+</html>
+
+
+        
