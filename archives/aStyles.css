@@ -183,6 +183,7 @@ story-section h3 {
   width: 100%;  /*image fills width of card size */
   display: block;
   margin-bottom: 10px;
+  width: 320px;
 }
 
 .card p {
