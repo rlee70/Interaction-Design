@@ -333,6 +333,58 @@ figcaption {
   color: white;
 }
 
+.overlay-button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.overlay-button-off {
+  border: red;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 3;
+}
+#overlay {
+  position: fixed;
+  display: none;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#overlay .search-section {
+  z-index: 3;
+  width: 100%;
+  max-width: 560px;
+  background: rgba(255, 255, 255, 0.98);
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  cursor: auto;
+}
+
+#overlay .search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.close-button {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.close-button .hamburger {
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .article-display {
     grid-template-columns: repeat(2, minmax(0, 1fr));

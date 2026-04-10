@@ -1,20 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CNN Redesign</title>
+    <title>Student Project</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body class="home-page">
     <header class="header">
       <div class="header-left">
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+        
+<button class="overlay-button" id="header-hamburger" type="button">          
+  <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
 
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg"
@@ -24,19 +27,22 @@
       </div>
       <!-- <div class="logo">My Website</div> -->
       <nav class="nav">
-        <a href="/archives/aPolitics.html" >Politics</a>
-      <a href="/archives/aBusiness.html">Business</a>
-      <a href="/archives/aEntertainment.html">Entertainment</a>
+        <a href="/archives/aPolitics.html">Politics</a>
+        <a href="/archives/aBusiness.html">Business</a>
+        <a href="/archives/aEntertainment.html">Entertainment</a>
       </nav>
       <div class="header-right">
+
+                <button class="overlay-button" data-overlay-toggle type="button">
         <img
           src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png"
           alt="search icon"
           class="search-icon"
         />
+       </button>
         <button class="liveButton">LIVE</button>
         <img
-          src="/images/profileIcon.jpg"
+          src="images/profileIcon.png"
           alt="user profile icon"
           class="user-profile-icon"
         />
@@ -49,7 +55,7 @@
           <h1 style="font-size: 2.6rem">Top Story</h1>
           <div class="main-art-container">
             <img
-              src="/images/homepageMainArt.png"
+              src="images/homepageMainArt.png"
               alt="iranArt"
               class="main-art"
             />
@@ -65,25 +71,25 @@
           </div>
           <ul>
             <li>
-              <a href="/ArticleView/vArticleViewP.html"
+              <a href="index.html"
                 >Triple Threat: Geopolitical conflict, shifting trade policies,
                 and volatile AI transition</a
               >
             </li>
             <li>
-              <a href="/ArticleView/vArticleViewP.html"
+              <a href="index.html"
                 >Trump makes false claims about the economy, elections and crime
                 in State of the Union</a
               >
             </li>
             <li>
-              <a href="/ArticleView/vArticleViewP.html"
+              <a href="index.html"
                 >Trump threatens to deploy ICE agents to airports Monday if
                 funding deal isn’t reached</a
               >
             </li>
             <li>
-              <a href="/ArticleView/vArticleViewP.html"
+              <a href="index.html"
                 >A year into Trump’s second term, Iowa voters offer clues for
                 the midterm elections</a
               >
@@ -94,7 +100,7 @@
           <section class="live-content">
             <div class="live-video">
               <img
-                src="/images/liveVidThumb.png"
+                src="images/liveVidThumb.png"
                 alt="live video"
                 class="live-video-placeholder"
               />
@@ -105,26 +111,45 @@
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
             </div>
-            <div>   
+            <div>
               <h2 style="margin: 8px; padding-top: 6px">Live Updates</h2>
               <p class="live-updates">
                 <a href="/ArticleView/vArticleViewP.html"
-                >Triple Threat: Geopolitical conflict, shifting trade policies,
-                and volatile AI transition</a>
+                  >Triple Threat: Geopolitical conflict, shifting trade
+                  policies, and volatile AI transition</a
+                >
               </p>
               <p class="live-updates">
                 <a href="/ArticleView/vArticleViewP.html"
-                >Trump makes false claims about the economy, elections and crime
-                in State of the Union</a>
+                  >Trump makes false claims about the economy, elections and
+                  crime in State of the Union</a
+                >
               </p>
             </div>
           </section>
         </aside>
       </div>
+       <div id="overlay">
+        <section class="search-section">
+          <div class="search-header">
+            <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </button>
+            <h2>Search navigation</h2>
+          </div>
+          <input type="text" id="search" placeholder="Search navigation..." />
+          <div id="loader" class="loader hidden"></div>
+          <ul id="results"></ul>
+        </section>
+      </div>
       <div class="article-display">
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="images/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -133,7 +158,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="images/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -142,7 +167,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="images/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -151,7 +176,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="images/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -160,7 +185,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="images/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -169,7 +194,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="images/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -178,11 +203,10 @@
         </span>
       </div>
     </main>
-    <script src="/hamburgerScript.js"></script>
+    <script src="hamburgerScript.js"></script>
   </body>
   <footer class="footer">
     <div class="footer-links-grid">
-      
       <div class="footer-column">
         <h4>US</h4>
         <a href="#">Crime & Justice</a>
@@ -218,11 +242,10 @@
         <a href="#">Calculators</a>
         <a href="#">Videos</a>
       </div>
-
     </div>
 
     <div class="footer-bottom">
       <p>Copywriter Info</p>
     </div>
-  </footer> 
+  </footer>
 </html>
