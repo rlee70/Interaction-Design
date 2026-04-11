@@ -88,6 +88,11 @@ h3 {
   cursor: pointer;
 }
 
+.liveButton:hover{
+  transform: scale(1.00);
+  background-color: #fff;
+}
+
 .search-icon {
   width: 36px;
   height: 36px;
