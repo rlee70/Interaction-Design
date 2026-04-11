@@ -90,9 +90,20 @@ body {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
 .liv-btn:hover {
   background-color: #860000;
   transition: all 0.2s ease;
+=======
+.liveButton:hover{
+  transform: scale(1.25);
+  transition: 0.2s ease;
+}
+
+.search-icon {
+  width: 36px;
+  height: 36px;
+>>>>>>> f8e56da (added live hover to all)
 }
 
 .icon {
@@ -127,10 +138,6 @@ body {
    text-align: left;
   margin-right: 45%;
   margin-left:2%;
-}
-
-.pageheader h3 {
-  text-decoration: none;
 }
 
 p{

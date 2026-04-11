@@ -190,6 +190,57 @@ body {
   text-decoration: underline;
 }
 
+.story-card {
+  flex: 0 0 200px;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.story-card:nth-child(1) { animation-delay: 0.2s; }
+.story-card:nth-child(2) { animation-delay: 0.4s; }
+.story-card:nth-child(3) { animation-delay: 0.6s; }
+.story-card:nth-child(4) { animation-delay: 0.8s; }
+.story-card:nth-child(5) { animation-delay: 1.05s; }
+.story-card:nth-child(6) { animation-delay: 1.2s; }
+.story-card:nth-child(7) { animation-delay: 1.4s; }
+.story-card:nth-child(8) { animation-delay: 1.6s; }
+ 
+.story-card p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.category-column h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+ 
+.category-column a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 6px;
+  border-top: 1.5px solid #000;
+  padding-top: 6px;
+}
+
+
+/* Fade in with slight upward slide */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /*Footer formatting */
 .footer {
   background-color: black;

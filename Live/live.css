@@ -60,6 +60,10 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+.live-btn:hover{
+  transform: scale(1.25);
+  transition: 0.2s ease;
+}
 
 .icon-search,
 .icon-profile {

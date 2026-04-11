@@ -77,7 +77,7 @@ body {
   gap: 30px;
 }
 
-.liv-btn {
+.live-btn {
   background-color: crimson;
   color: white;
   padding: 6px 12px;
@@ -90,6 +90,11 @@ body {
 .liv-btn:hover {
   background-color: #860000;
   transition: all 0.2s ease;
+}
+
+.live-btn:hover{
+  transform: scale(1.25);
+  transition: 0.2s ease;
 }
 
 .icon {
