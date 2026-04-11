@@ -135,14 +135,14 @@ ________________________________________________________________________________
 
 
 Footer HTML Code:
-  <footer class="footer">
+    <footer class="footer">
     <div class="footer-links-grid">
       
       <div class="footer-column">
         <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
         <a href="/subcategory/sPolitics.html">US Government</a>
-        <a href="/subcategory/sPolitics.html">Facts First</a>
-        <a href="/subcategory/sPolitics.html">CNN Polls</a>
+        <a href="/subcategory/sPolitics.html">United Nations</a>
+        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
         <a href="/subcategory/sPolitics.html">Election</a>
       </div>
 
@@ -151,7 +151,7 @@ Footer HTML Code:
         <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
         <a href="/subcategory/sBusiness.html">Media</a>
         <a href="/subcategory/sBusiness.html">Markets</a>
-        <a href="/subcategory/sBusiness.html">Videos</a>
+        <a href="/subcategory/sBusiness.html">Technology</a>
       </div>
       
       <div class="footer-column">
@@ -189,6 +189,8 @@ Footer HTML Code:
 
   </footer> 
 
+
+  
 
   Footer CSS:
   /*Footer formatting */

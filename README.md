@@ -19,7 +19,7 @@ This project is a static web application built to simulate a modern news platfor
 * **JavaScript** (DOM manipulation, Fetch API, Array filtering)
 * **JSON** (Local data storage)
 
-## 💻 Local Setup Instructions
+## Local Setup Instructions
 
 Because this project uses the JavaScript `fetch()` API to load local JSON files, **it cannot be run by simply double-clicking the `index.html` file.** Your browser will block the data for security reasons (CORS). You must run it through a local web server.
 

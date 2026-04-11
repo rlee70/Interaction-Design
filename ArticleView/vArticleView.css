@@ -90,20 +90,9 @@ body {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
 .liv-btn:hover {
   background-color: #860000;
   transition: all 0.2s ease;
-=======
-.liveButton:hover{
-  transform: scale(1.25);
-  transition: 0.2s ease;
-}
-
-.search-icon {
-  width: 36px;
-  height: 36px;
->>>>>>> f8e56da (added live hover to all)
 }
 
 .icon {
@@ -120,8 +109,7 @@ body {
 .ui-icon:hover {
   opacity: 0.7;
   transition: opacity 0.2s ease;
-}
-
+} 
 
 
 /* Content */
@@ -156,7 +144,7 @@ p{
 
 
 
-/*Footer formatting */
+  /*Footer formatting */
 .footer {
   background-color: black;
   padding: 40px;

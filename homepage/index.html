@@ -8,40 +8,27 @@
   </head>
 
   <body class="home-page">
-    <header class="header">
-      <div class="header-left">
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+  <header class="header">
+    <div class="header-left">
+        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon">
+        <a href="/homepage/index.html" class="logo-link">
+            <img src="/Resources/Images/ui/CNNlogo.png" alt="CNN Homepage" class="logo-image">
+        </a>
+    </div>
 
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg"
-          alt="Logo"
-          class="logo-image"
-        />
-      </div>
-      <!-- <div class="logo">My Website</div> -->
-      <nav class="nav">
-        <a href="/archives/aPolitics.html" >Politics</a>
-      <a href="/archives/aBusiness.html">Business</a>
-      <a href="/archives/aEntertainment.html">Entertainment</a>
-      </nav>
-      <div class="header-right">
-        <img
-          src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png"
-          alt="search icon"
-          class="search-icon"
-        />
-        <button class="liveButton">LIVE</button>
-        <img
-          src="/images/profileIcon.jpg"
-          alt="user profile icon"
-          class="user-profile-icon"
-        />
-      </div>
-    </header>
+    <nav class="nav-main">
+            <a href="/archives/aPolitics.html">Politics</a>
+            <a href="/archives/aBusiness.html">Business</a>
+            <a href="/archives/aEntertainment.html">Entertainment</a>
+    </nav>
+
+    <div class="header-right">
+        <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
+        <div class="liv-btn">LIVE</div>
+        <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
+        <img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon">
+    </div>
+  </header>
 
     <main class="content">
       <div class="main-layout">
@@ -49,7 +36,7 @@
           <h1 style="font-size: 2.6rem">Top Story</h1>
           <div class="main-art-container">
             <img
-              src="/images/homepageMainArt.png"
+              src="/Resources/Images/articles/homePageMainArt.png"
               alt="iranArt"
               class="main-art"
             />
@@ -94,7 +81,7 @@
           <section class="live-content">
             <div class="live-video">
               <img
-                src="/images/liveVidThumb.png"
+                src="/Resources/Images/articles/liveVidThumb.png"
                 alt="live video"
                 class="live-video-placeholder"
               />
@@ -124,7 +111,7 @@
       <div class="article-display">
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="/Resources/Images/articles/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -133,7 +120,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="/Resources/Images/articles/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -142,7 +129,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="/Resources/Images/articles/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -151,7 +138,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="/Resources/Images/articles/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -160,7 +147,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="/Resources/Images/articles/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -169,7 +156,7 @@
         </span>
         <span class="article">
           <figure>
-            <img src="/images/homePageArt.png" alt="macBook prices article" />
+            <img src="/Resources/Images/articles/homePageArt.png" alt="macBook prices article" />
             <figcaption>
               Apple Announces New its cheapest <br />
               laptop ever
@@ -180,49 +167,58 @@
     </main>
     <script src="/hamburgerScript.js"></script>
   </body>
-  <footer class="footer">
+
+    <footer class="footer">
     <div class="footer-links-grid">
       
       <div class="footer-column">
-        <h4>US</h4>
-        <a href="#">Crime & Justice</a>
-        <a href="#">Immigration</a>
-        <a href="#">Education</a>
-        <a href="#">Transportation</a>
-        <a href="#">Race & Identity</a>
+        <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
+        <a href="/subcategory/sPolitics.html">US Government</a>
+        <a href="/subcategory/sPolitics.html">United Nations</a>
+        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
+        <a href="/subcategory/sPolitics.html">Election</a>
       </div>
 
       <div class="footer-column">
-        <h4>World</h4>
-        <a href="#">Africa</a>
-        <a href="#">Americas</a>
-        <a href="#">Asia</a>
-        <a href="#">Australia</a>
-        <a href="#">China</a>
-        <a href="#">Europe</a>
+        <a href="/archives/aBusiness.html"><h4>Business</h4></a>
+        <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
+        <a href="/subcategory/sBusiness.html">Media</a>
+        <a href="/subcategory/sBusiness.html">Markets</a>
+        <a href="/subcategory/sBusiness.html">Technology</a>
       </div>
-
+      
       <div class="footer-column">
-        <h4>Politics</h4>
-        <a href="#">Trump</a>
-        <a href="#">Facts First</a>
-        <a href="#">CNN Polls</a>
-        <a href="#">Election</a>
-        <a href="#">Calendar</a>
+        <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
+        <a href="/subcategory/sEntertainment.html">Hollywood</a>
+        <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
+        <a href="/subcategory/sEntertainment.html">Celebrity News</a>
+        <a href="/subcategory/sEntertainment.html">Music</a>
       </div>
-
-      <div class="footer-column">
-        <h4>Business</h4>
-        <a href="#">Tech</a>
-        <a href="#">Media</a>
-        <a href="#">Calculators</a>
-        <a href="#">Videos</a>
-      </div>
-
     </div>
 
     <div class="footer-bottom">
-      <p>Copywriter Info</p>
+        <div class="footer-actions">
+        <a href="/Live/live.html">Watch</a>
+        <span class="divider">|</span>
+        <a href="#" class="btn-signin">Sign in</a>
+      </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-links">
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">About</a>
+
     </div>
-  </footer> 
+
+    <hr class="footer-line">
+    
+    <div class="footer-copywrite">
+        <p>© 2026 Team REKAP. ITIS 4390. Interaction Design Capstone. University of North Carolina at Charlotte.</p>
+    </div>
+
+    </div>
+
+  </footer>
 </html>

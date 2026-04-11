@@ -45,65 +45,105 @@ h3 {
   color: #000000;
 } */
 /* HEADER */
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background: #bababa;
+  padding: 16px;
+  background: #000000;
   color: white;
 }
 
 .header-left {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  align-items:center;
+  gap: 20px;  /*space between menu icon and logo*/
+  text-decoration: none;
+}
+
+.logo {
+  background-color:crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.logo-link{
+  text-decoration: none;
+  display: flex;
+}
+
+.logo-image{
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.logo:hover {
+  background-color: #860000;
+  transition: background-color 0.2s ease;
+}
+
+.nav-main {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-main a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-main a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .header-right {
   display: flex;
-  justify-content: space-between;
-  /* padding: 10px; */
   align-items: center;
-  height: 100%;
-  width: 20%;
-  gap: 10px;
+  gap: 30px;
 }
 
-.logo-image {
-  height: 56px;
-  width: auto;
-  max-width: 140px;
-  padding: 4px;
-}
-
-.liveButton {
-  background-color: #00fbff;
-  color: #000000;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.1rem;
+.liv-btn {
+  background-color: crimson;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
   font-weight: bold;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.liveButton:hover{
-  transform: scale(1.25);
-  transition: 0.2s ease;
+.liv-btn:hover {
+  background-color: #860000;
+  transition: all 0.2s ease;
 }
 
-.search-icon {
-  width: 36px;
-  height: 36px;
+.icon {
+  font-size: 30px;
 }
 
-.user-profile-icon {
-  max-width: 25%;
-  height: 42px;
+.ui-icon {
+  height: 28px;
+  width: auto;
+  display: block;
+  cursor: pointer;
 }
 
-.nav {
+.ui-icon:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+} 
+
+
+
+ .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -304,7 +344,9 @@ figcaption {
 .article figcaption br {
   display: none;
 }
-/*Footer formatting */
+
+
+  /*Footer formatting */
 .footer {
   background-color: black;
   padding: 40px;
@@ -313,20 +355,26 @@ figcaption {
 
 .footer-links-grid {
   display: flex;
-  justify-content: center; /*centers the grid of columns*/
+  justify-content: center;  /*centers the grid of columns*/
   gap: 80px;
   margin-bottom: 40px;
 }
 
 .footer-column {
   display: flex;
-  flex-direction: column; /*stacks the links vertically*/
-  align-items: center; /*centers text inside column*/
+  flex-direction: column;  /*stacks the links vertically*/
+  align-items: center;  /*centers text inside column*/
 }
 
 .footer-column h4 {
   font-size: 18px;
   margin-bottom: 20px;
+  color: white;
+}
+
+.footer-column h4:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .footer-column a {
@@ -336,10 +384,63 @@ figcaption {
   margin-bottom: 10px;
 }
 
+.footer-column a:hover {
+  color:#888888;
+  transition: 0.2s ease;
+}
+
 .footer-bottom {
   text-align: center;
   font-size: 12px;
   color: white;
+}
+
+.footer-line {
+  border: none;
+  border-top: 2px solid #404040; 
+  margin: 20px 0;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Spacing between the text links and buttons */
+}
+
+.footer-actions a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-actions a:hover {
+  color:#888888;
+  transition: 0.2s ease;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Allows links to flow to a new line on small screens */
+  gap: 15px 25px;
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  color: #cccccc; 
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #888888; 
+  line-height: 1.6;
+}
+
+.footer-copyright p {
+  margin: 5px 0;
+  color:#888888;
 }
 
 @media (max-width: 900px) {
