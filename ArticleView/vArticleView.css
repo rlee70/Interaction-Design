@@ -73,6 +73,11 @@ a,a:hover{
   cursor: pointer;
 }
 
+.liveButton:hover{
+  transform: scale(1.25);
+  transition: 0.2s ease;
+}
+
 .search-icon {
   width: 36px;
   height: 36px;
