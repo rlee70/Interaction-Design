@@ -142,6 +142,15 @@ story-section h3 {
   overflow: hidden;    /*not adding scrolling feature yet to keep page static for now */
 }
 
+/* horizontal scrolling row of story cards */
+.stories-scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
 .card {
   width: 320px;
   flex-shrink: 0;
