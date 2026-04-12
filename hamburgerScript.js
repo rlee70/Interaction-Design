@@ -4,15 +4,18 @@ const headerHamburger = document.getElementById("header-hamburger");
 headerHamburger.addEventListener("click", () => {
   const nav = document.querySelector(".nav");
   nav.classList.toggle("active");
-  headerHamburger.classList.toggle("active");
+  const hamburger = headerHamburger.querySelector(".hamburger");
+  hamburger.classList.toggle("active");
 });
 
 const overlay = document.getElementById("overlay");
 const overlayButtons = document.querySelectorAll("[data-overlay-toggle]");
 
 function setOverlayVisible(visible) {
-  overlay.style.display = visible ? "block" : "none";
-  const closeHamburger = document.querySelector("#overlay .close-button .hamburger");
+  overlay.style.display = visible ? "flex" : "none";
+  const closeHamburger = document.querySelector(
+    "#overlay .close-button .hamburger",
+  );
   if (closeHamburger) {
     closeHamburger.classList.toggle("active", visible);
   }
@@ -20,7 +23,7 @@ function setOverlayVisible(visible) {
 
 overlayButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
-    const isOpen = overlay.style.display === "block";
+    const isOpen = overlay.style.display !== "none";
     setOverlayVisible(!isOpen);
   });
 });
@@ -32,21 +35,39 @@ overlay.addEventListener("click", (event) => {
 });
 
 // FAKE DATA (NO BACKEND)
-const items = ["Home", "Explore", "About", "Contact"];
+const items = [
+  { name: "Politics", url: "/archives/aPolitics.html" },
+  { name: "Business", url: "/archives/aBusiness.html" },
+  { name: "Entertainment", url: "/archives/aEntertainment.html" },
+  { name: "Technology", url: "index.html" },
+  { name: "Sports", url: "index.html" },
+  { name: "Health", url: "index.html" },
+  { name: "Science", url: "index.html" },
+  { name: "World", url: "index.html" },
+  { name: "Travel", url: "index.html" },
+  { name: "Jump", url: "index.html" },
+];
 
 const searchInput = document.getElementById("search");
 const results = document.getElementById("results");
 const loader = document.getElementById("loader");
 
+let searchTimeout;
+
 searchInput.addEventListener("input", () => {
   results.innerHTML = "";
   loader.classList.remove("hidden");
 
-  setTimeout(() => {
+  // Clear previous timeout
+  clearTimeout(searchTimeout);
+
+  searchTimeout = setTimeout(() => {
     loader.classList.add("hidden");
     const query = searchInput.value.toLowerCase();
-    const matches = items.filter((item) => item.toLowerCase().includes(query));
-
+    const matches = items.filter((item) =>
+      item.name.toLowerCase().includes(query),
+    );
+    //ifnothing matches
     if (matches.length === 0 && query !== "") {
       const li = document.createElement("li");
       li.textContent = "No results found";
@@ -54,9 +75,12 @@ searchInput.addEventListener("input", () => {
     }
 
     matches.forEach((match) => {
-      const li = document.createElement("li");
-      li.textContent = match;
-      results.appendChild(li);
+      const a = document.createElement("a");
+      a.textContent = match.name;
+      a.href = match.url;
+      a.style.textDecoration = "none";
+      a.style.color = "inherit";
+      results.appendChild(a);
     });
-  }, 1200);
+  }, 300); 
 });

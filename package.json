@@ -1,0 +1,20 @@
+{
+  "name": "interaction-design",
+  "version": "1.0.0",
+  "description": "CNN news website redesign for Capstone assignment.",
+  "main": "hamburgerScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rlee70/Interaction-Design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rlee70/Interaction-Design/issues"
+  },
+  "homepage": "https://github.com/rlee70/Interaction-Design#readme"
+}
