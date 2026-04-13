@@ -2,7 +2,7 @@ const headerHamburger = document.getElementById("header-hamburger");
 
 // Toggle the mobile nav menu
 headerHamburger.addEventListener("click", () => {
-  const nav = document.querySelector(".nav");
+  const nav = document.querySelector(".nav-main");
   nav.classList.toggle("active");
   const hamburger = headerHamburger.querySelector(".hamburger");
   hamburger.classList.toggle("active");
@@ -14,10 +14,15 @@ const overlayButtons = document.querySelectorAll("[data-overlay-toggle]");
 function setOverlayVisible(visible) {
   overlay.style.display = visible ? "flex" : "none";
   const closeHamburger = document.querySelector(
-    "#overlay .close-button .hamburger",
+      "#overlay .close .hamburger",
   );
   if (closeHamburger) {
     closeHamburger.classList.toggle("active", visible);
+    
+  }
+  const mainHamburgerIcon = headerHamburger.querySelector(".hamburger");
+  if (mainHamburgerIcon) {
+    mainHamburgerIcon.classList.toggle("active", visible);
   }
 }
 
@@ -39,12 +44,10 @@ const items = [
   { name: "Politics", url: "/archives/aPolitics.html" },
   { name: "Business", url: "/archives/aBusiness.html" },
   { name: "Entertainment", url: "/archives/aEntertainment.html" },
-  { name: "Technology", url: "index.html" },
-  { name: "Sports", url: "index.html" },
-  { name: "Health", url: "index.html" },
-  { name: "Science", url: "index.html" },
-  { name: "World", url: "index.html" },
-  { name: "Travel", url: "index.html" },
+  { name: "Technology", url: "/subcategory/sBusiness.html" },
+  { name: "US Government", url: "/subcategory/sPolitics.html" },
+  { name: "International Politics", url: "/subcategory/sPolitics.html" },
+  { name: "Music", url: "/subcategory/sEntertainment.html" },
   { name: "Jump", url: "index.html" },
 ];
 
@@ -79,7 +82,7 @@ searchInput.addEventListener("input", () => {
       a.textContent = match.name;
       a.href = match.url;
       a.style.textDecoration = "none";
-      a.style.color = "inherit";
+      a.style.color = "white";
       results.appendChild(a);
     });
   }, 300); 
