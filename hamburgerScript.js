@@ -58,7 +58,9 @@ const loader = document.getElementById("loader");
 let searchTimeout;
 
 searchInput.addEventListener("input", () => {
+  
   results.innerHTML = "";
+  //shows loader
   loader.classList.remove("hidden");
 
   // Clear previous timeout
