@@ -74,6 +74,7 @@ searchInput.addEventListener("input", () => {
     if (matches.length === 0 && query !== "") {
       const li = document.createElement("li");
       li.textContent = "No results found";
+li.style.color = "white";
       results.appendChild(li);
     }
 
