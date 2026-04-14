@@ -3,55 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Politics Article View</title>
+    <title>CNN Redesign</title>
     <link rel ="stylesheet" href="vArticleView.css">
 </head>
-<body>
-     <body class="home-page">
-    <header class="header">
-      <div class="header-left">
-        <div class="hamburger" id="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
 
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/b/b1/CNN.svg"
-          alt="Logo"
-          class="logo-image"
-        />
+<body>
+  <header class="header">
+      <div class="header-left">
+        <button
+          class="overlay-button"
+          data-overlay-toggle
+          id="header-hamburger"
+          type="button"
+        >
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+        <a href="/homepage/index.html" class="logo-link">
+          <img
+            src="/Resources/Images/ui/CNNlogo.png"
+            alt="CNN Homepage"
+            class="logo-image"
+          />
+        </a>
+           <a href="/archives/aPolitics.html" class="logo badge-link">Politics</a>
       </div>
-      <!-- <div class="logo">My Website</div> -->
-      <nav class="nav">
-        <a href="/archives/aPolitics.html" >Politics</a>
-      <a href="/archives/aBusiness.html">Business</a>
-      <a href="/archives/aEntertainment.html">Entertainment</a>
+
+      <nav class="nav-main">
+        <a href="/archives/aPolitics.html">Politics</a>
+        <a href="/archives/aBusiness.html">Business</a>
+        <a href="/archives/aEntertainment.html">Entertainment</a>
       </nav>
+
       <div class="header-right">
+        <button class="overlay-button" data-overlay-toggle type="button">
+          <img
+            src="/Resources/Images/ui/search.png"
+            alt="search"
+            class="ui-icon"
+          />
+        </button>
+        <a href="/Live/login.html"><div class="liv-btn">LIVE</div></a>
         <img
-          src="https://www.iconpacks.net/icons/2/free-search-icon-2903-thumb.png"
-          alt="search icon"
-          class="search-icon"
+          src="/Resources/Images/ui/dark-light.png"
+          alt="dark-light"
+          class="ui-icon"
         />
-        <button class="liveButton">LIVE</button>
-        <!--
         <img
-          src="/images/profileIcon.png"
-          alt="user profile icon"
-          class="user-profile-icon"
-        />-->
+          src="/Resources/Images/ui/user.png"
+          alt="profile"
+          class="ui-icon"
+        />
       </div>
     </header>
+        <div id="overlay">
+      <section class="search-section">
+        <div class="search-header">
+
+        </div>
+        <input type="text" id="search" placeholder="Search navigation..." />
+        <div id="loader" class="loader hidden"></div>
+        <ul id="results"></ul>
+      </section>
+    </div>
+  <!-- <header class="header">
+    <div class="header-left">
+        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon">
+        <a href="/homepage/index.html" class="logo-link">
+            <img src="/Resources/Images/ui/CNNlogo.png" alt="CNN Homepage" class="logo-image">
+        </a>
+        <a href="/archives/aPolitics.html" class="logo badge-link">Politics</div></a>
+    </div>
+
+    <nav class="nav-main">
+            <a href="/archives/aPolitics.html">Politics</a>
+            <a href="/archives/aBusiness.html">Business</a>
+            <a href="/archives/aEntertainment.html">Entertainment</a>
+    </nav>
+
+    <div class="header-right">
+        <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
+        <div class="liv-btn">LIVE</div>
+        <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
+        <img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon">
+    </div>
+  </header> -->
 
     <div class="article-Title">
-    <h3><a href="/archives/aPolitics.html">Politics</a> -> Federal Government</h3>
+      <br> <br>
+    <h3><a href="/subcategory/sPolitics.html">Politics</a> > <a href="/subcategory/sPolitics.html">Federal Government</h3></a>
+    <br>
     <h2>Fact Check: Trump makes false claims about the economy about the economy and 
         crime in State of the Union</h2>
-    <p><i>15 Min Read</i></p>
+    <br>
+    <p><i>5 Min Read</i></p>
     </div>
     <div class="article-ImgDesc">
-    <img src="/images/politicsImg.avif">
+    <img src="/Resources/Images/articles/politicsImg.avif">
+    <br>
     <p>Updated Feb 22,2026</p>
     <p>By CNN Staff</p>
     </div>
@@ -67,12 +119,14 @@
         <br>
         <h2 id = article-ConHeaders >Economy and Inflation</h2>
         <br>
+        <br>
         <h3 id = article-ConHeaders><b>Fact check: Trump falsely claims US has secured ‘$18 trillion’ in investments </b></h3>
         <p> Trump repeated his regular false claim that he has secured $18 trillion in investments in the US since returning to office, 
             saying, “In 12 months, I secured commitments for more than $18 trillion pouring in from all over the globe.”
             The $18 trillion figure is fiction. As of the night of Trump’s address, the White House’s own website said the figure for “major investment announcements” 
             during this Trump term was “$9.7 trillion,” and even that is a major exaggeration; a detailed CNN review in October found the White House was counting trillions of dollars in vague investment pledges, pledges that were about “bilateral trade” or “economic exchange” rather than investment in the US and vague statements that didn’t even rise to the level of pledges.
             <br><i>From CNN’s Daniel Dale</i> </p>
+        <br>
         <br>
         <h3 id="article-ConHeaders"><b>Fact check: Trump’s misleading claims on gasoline prices</b></h3>
         <p> Trump claimed gas prices are “now below $2.30 a gallon in most states, and in some places, $1.99 a gallon.” 
@@ -86,6 +140,7 @@
             according to CNN reporter Steve Contorno, who was on scene. Contorno saw that the gas station right outside the venue where Trump spoke was selling for $2.69 per gallon. 
             <br><i>From CNN’s Daniel Dale</i></p>
         <br>
+        <br>
          <h3 id="article-ConHeaders"><b>Fact check: Trump falsely claims he inherited record inflation </b></h3>
         <p> Trump falsely claimed that when he gave his previous address to Congress early last year, he had “just inherited … inflation at record levels.” He added a bit later that former President Joe Biden and his congressional allies “gave us the worst inflation in the history of our country.”
             Trump didn’t inherit the worst inflation in US history, and Biden never had the worst inflation in US history. The year-over-year inflation rate in Biden’s last full month in office, December 2024, was 2.9%, and the rate in the month in which Trump took over partway through, January 2025, 
@@ -94,50 +149,62 @@
         <br><i>From CNN’s Daniel Dale</i></p>
 
     </div>
-</body>
- <footer class="footer">
+ 
+  <footer class="footer">
     <div class="footer-links-grid">
       
       <div class="footer-column">
-        <h4>US</h4>
-        <a href="#">Crime & Justice</a>
-        <a href="#">Immigration</a>
-        <a href="#">Education</a>
-        <a href="#">Transportation</a>
-        <a href="#">Race & Identity</a>
+        <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
+        <a href="/subcategory/sPolitics.html">US Government</a>
+        <a href="/subcategory/sPolitics.html">United Nations</a>
+        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
+        <a href="/subcategory/sPolitics.html">Election</a>
       </div>
 
       <div class="footer-column">
-        <h4>World</h4>
-        <a href="#">Africa</a>
-        <a href="#">Americas</a>
-        <a href="#">Asia</a>
-        <a href="#">Australia</a>
-        <a href="#">China</a>
-        <a href="#">Europe</a>
+        <a href="/archives/aBusiness.html"><h4>Business</h4></a>
+        <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
+        <a href="/subcategory/sBusiness.html">Media</a>
+        <a href="/subcategory/sBusiness.html">Markets</a>
+        <a href="/subcategory/sBusiness.html">Technology</a>
       </div>
-
+      
       <div class="footer-column">
-        <h4>Politics</h4>
-        <a href="#">Trump</a>
-        <a href="#">Facts First</a>
-        <a href="#">CNN Polls</a>
-        <a href="#">Election</a>
-        <a href="#">Calendar</a>
+        <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
+        <a href="/subcategory/sEntertainment.html">Hollywood</a>
+        <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
+        <a href="/subcategory/sEntertainment.html">Celebrity News</a>
+        <a href="/subcategory/sEntertainment.html">Music</a>
       </div>
-
-      <div class="footer-column">
-        <h4>Business</h4>
-        <a href="#">Tech</a>
-        <a href="#">Media</a>
-        <a href="#">Calculators</a>
-        <a href="#">Videos</a>
-      </div>
-
     </div>
 
     <div class="footer-bottom">
-      <p>Copywriter Info</p>
+        <div class="footer-actions">
+        <a href="/Live/login.html">Watch</a>
+        <span class="divider">|</span>
+        <a href="#" class="btn-signin">Sign in</a>
+      </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-links">
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">About</a>
+
     </div>
-  </footer> 
+
+    <hr class="footer-line">
+    
+    <div class="footer-copywrite">
+        <p>© 2026 Team REKAP. ITIS 4390. Interaction Design Capstone. University of North Carolina at Charlotte.</p>
+    </div>
+
+    </div>
+
+  </footer>
+    <script src="/hamburgerScript.js"></script>
+
+</body>
+
 </html>

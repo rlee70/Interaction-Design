@@ -13,27 +13,46 @@ body {
 }
 
 /* header pragya */
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 16px;
-  background: #333;
+  background: #000000;
   color: white;
 }
 
 .header-left {
   display: flex;
-  align-items: center;
-  gap: 20px;
+  align-items:center;
+  gap: 20px;  /*space between menu icon and logo*/
+  text-decoration: none;
 }
 
 .logo {
-  background-color: crimson;
+  background-color:crimson;
   color: white;
   font-weight: bold;
   font-size: 24px;
   padding: 5px 10px;
+  text-decoration: none;
+}
+
+.logo-link{
+  text-decoration: none;
+  display: flex;
+}
+
+.logo-image{
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.logo:hover {
+  background-color: #860000;
+  transition: background-color 0.2s ease;
 }
 
 .nav-main {
@@ -43,24 +62,33 @@ body {
 
 .nav-main a {
   color: white;
+  margin-left: 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+.nav-main a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .header-right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
 }
 
-.live-btn {
+.liv-btn {
   background-color: crimson;
   color: white;
-  padding: 5px 10px;
-  font-size: 14px;
+  padding: 6px 12px;
+  font-size: 16px;
   font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+<<<<<<< HEAD
 .live-btn:hover{
   transform: scale(1.25);
   transition: 0.2s ease;
@@ -69,6 +97,150 @@ body {
 .icon-search,
 .icon-profile {
   font-size: 20px;
+=======
+.liv-btn:hover {
+  background-color: #860000;
+  transition: all 0.2s ease;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.ui-icon {
+  height: 28px;
+  width: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.ui-icon:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+} 
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.overlay-button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.overlay-button-off {
+  border: red;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 3;
+}
+#overlay {
+  position: relative;
+  top: 100%; /* Position below the header */
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#overlay .search-section {
+  width: 100%;
+  max-width: none;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search {
+margin: 0 auto ;
+    /* position: relative; */
+  width: 60%;
+  padding: 12px 16px;
+  font-size: 16px;
+  /* border: 2px solid #333; */
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  outline: none;
+}
+
+#search:focus {
+  border-color: crimson;
+}
+
+#results {
+  margin-top: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 40%;
+}
+
+#results a {
+  display: block;
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+  color: rgb(15, 116, 0);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+#results a:hover {
+  background-color: rgba(220, 20, 60, 0.2);
+}
+
+#loader {
+  margin-top: 16px;
+  text-align: center;
+  color: white;
+  width: 60%;
+  max-width: 560px;
+}
+
+#overlay .search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 12px;
+  margin-bottom: 18px; */
+}
+
+.close-button {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.close-button .hamburger {
+  margin: 0;
+>>>>>>> main
 }
 
 /* video content */
@@ -131,29 +303,35 @@ body {
 }
 
 /* footer pragya */
+  /*Footer formatting */
 .footer {
   background-color: black;
   padding: 40px;
   margin-top: 50px;
-  color: white;
 }
 
 .footer-links-grid {
   display: flex;
-  justify-content: center;
+  justify-content: center;  /*centers the grid of columns*/
   gap: 80px;
   margin-bottom: 40px;
 }
 
 .footer-column {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column;  /*stacks the links vertically*/
+  align-items: center;  /*centers text inside column*/
 }
 
 .footer-column h4 {
   font-size: 18px;
   margin-bottom: 20px;
+  color: white;
+}
+
+.footer-column h4:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .footer-column a {
@@ -163,9 +341,63 @@ body {
   margin-bottom: 10px;
 }
 
+.footer-column a:hover {
+  color:#888888;
+  transition: 0.2s ease;
+}
+
 .footer-bottom {
   text-align: center;
   font-size: 12px;
+  color: white;
+}
+
+.footer-line {
+  border: none;
+  border-top: 2px solid #404040; 
+  margin: 20px 0;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Spacing between the text links and buttons */
+}
+
+.footer-actions a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-actions a:hover {
+  color:#888888;
+  transition: 0.2s ease;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Allows links to flow to a new line on small screens */
+  gap: 15px 25px;
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  color: #cccccc; 
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #888888; 
+  line-height: 1.6;
+}
+
+.footer-copyright p {
+  margin: 5px 0;
+  color:#888888;
 }
 
 /* mobile */

@@ -1,0 +1,291 @@
+this is a txt file so you guys can easily copy over the code to your sections, and i can fix all the code here in case
+i need to make any changed
+
+
+Header Code:
+  <header class="header">
+    <div class="header-left">
+        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon">
+        <a href="/homepage/index.html" class="logo-link">
+            <img src="/Resources/Images/ui/CNNlogo.png" alt="CNN Homepage" class="logo-image">
+        </a>
+
+        ****________________ PLEASE READ - special note about the code line below 
+        NOTE:  THIS IS IMPORTANT!!!! This is a special functionality i added, so every article/video/archive/subcategory page will
+        have this line, and its a little button that goes next to the main CNN logo. So make sure you guys change the link/text
+        and make it respective to the content of the page. Ex. a business video will have the business button, so forth.
+        ________________**** 
+
+        <a href="/archives/aPolitics.html" class="logo badge-link">Politics</div></a>
+    </div>
+
+    <nav class="nav-main">
+            <a href="/archives/aPolitics.html">Politics</a>
+            <a href="/archives/aBusiness.html">Business</a>
+            <a href="/archives/aEntertainment.html">Entertainment</a>
+    </nav>
+
+    <div class="header-right">
+        <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
+        <div class="liv-btn">LIVE</div>
+        <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
+        <img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon">
+    </div>
+  </header>
+
+
+ Header CSS File:
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #000000;
+  color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items:center;
+  gap: 20px;  /*space between menu icon and logo*/
+  text-decoration: none;
+}
+
+.logo {
+  background-color:crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.logo-link{
+  text-decoration: none;
+  display: flex;
+}
+
+.logo-image{
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.logo:hover {
+  background-color: #860000;
+  transition: background-color 0.2s ease;
+}
+
+.nav-main {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-main a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-main a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.liv-btn {
+  background-color: crimson;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.liv-btn:hover {
+  background-color: #860000;
+  transition: all 0.2s ease;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.ui-icon {
+  height: 28px;
+  width: auto;
+  display: block;
+  cursor: pointer;
+}
+
+.ui-icon:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+} 
+
+__________________________________________________________________________________________
+
+
+Footer HTML Code:
+    <footer class="footer">
+    <div class="footer-links-grid">
+      
+      <div class="footer-column">
+        <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
+        <a href="/subcategory/sPolitics.html">US Government</a>
+        <a href="/subcategory/sPolitics.html">United Nations</a>
+        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
+        <a href="/subcategory/sPolitics.html">Election</a>
+      </div>
+
+      <div class="footer-column">
+        <a href="/archives/aBusiness.html"><h4>Business</h4></a>
+        <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
+        <a href="/subcategory/sBusiness.html">Media</a>
+        <a href="/subcategory/sBusiness.html">Markets</a>
+        <a href="/subcategory/sBusiness.html">Technology</a>
+      </div>
+      
+      <div class="footer-column">
+        <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
+        <a href="/subcategory/sEntertainment.html">Hollywood</a>
+        <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
+        <a href="/subcategory/sEntertainment.html">Celebrity News</a>
+        <a href="/subcategory/sEntertainment.html">Music</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-actions">
+        <a href="/Live/live.html">Watch</a>
+        <span class="divider">|</span>
+        <a href="#" class="btn-signin">Sign in</a>
+      </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-links">
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">About</a>
+
+    </div>
+
+    <hr class="footer-line">
+    
+    <div class="footer-copywrite">
+        <p>© 2026 Team REKAP. ITIS 4390. Interaction Design Capstone. University of North Carolina at Charlotte.</p>
+    </div>
+
+    </div>
+
+  </footer> 
+
+
+  
+
+  Footer CSS:
+  /*Footer formatting */
+.footer {
+  background-color: black;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+.footer-links-grid {
+  display: flex;
+  justify-content: center;  /*centers the grid of columns*/
+  gap: 80px;
+  margin-bottom: 40px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;  /*stacks the links vertically*/
+  align-items: center;  /*centers text inside column*/
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.footer-column h4:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column a:hover {
+  color:#888888;
+  transition: 0.2s ease;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+
+.footer-line {
+  border: none;
+  border-top: 2px solid #404040; 
+  margin: 20px 0;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Spacing between the text links and buttons */
+}
+
+.footer-actions a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-actions a:hover {
+  color:#888888;
+  transition: 0.2s ease;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap; /* Allows links to flow to a new line on small screens */
+  gap: 15px 25px;
+  margin-bottom: 25px;
+}
+
+.footer-links a {
+  color: #cccccc; 
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: #888888; 
+  line-height: 1.6;
+}
+
+.footer-copyright p {
+  margin: 5px 0;
+  color:#888888;
+}

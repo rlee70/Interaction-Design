@@ -8,24 +8,89 @@
 </head>
 
 <body>
-  <header class="header">
+      <header class="header">
+      <div class="header-left">
+        <button
+          class="overlay-button"
+          data-overlay-toggle
+          id="header-hamburger"
+          type="button"
+        >
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
+        <a href="/homepage/index.html" class="logo-link">
+          <img
+            src="/Resources/Images/ui/CNNlogo.png"
+            alt="CNN Homepage"
+            class="logo-image"
+          />
+        </a>
+           <a href="/archives/aBusiness.html" class="logo badge-link">Business</a>
+      </div>
+
+      <nav class="nav-main">
+        <a href="/archives/aPolitics.html">Politics</a>
+        <a href="/archives/aBusiness.html">Business</a>
+        <a href="/archives/aEntertainment.html">Entertainment</a>
+      </nav>
+
+      <div class="header-right">
+        <button class="overlay-button" data-overlay-toggle type="button">
+          <img
+            src="/Resources/Images/ui/search.png"
+            alt="search"
+            class="ui-icon"
+          />
+        </button>
+        <a href="/Live/login.html"><div class="liv-btn">LIVE</div></a>
+        <img
+          src="/Resources/Images/ui/dark-light.png"
+          alt="dark-light"
+          class="ui-icon"
+        />
+        <img
+          src="/Resources/Images/ui/user.png"
+          alt="profile"
+          class="ui-icon"
+        />
+      </div>
+    </header>
+        <div id="overlay">
+      <section class="search-section">
+        <div class="search-header">
+
+        </div>
+        <input type="text" id="search" placeholder="Search navigation..." />
+        <div id="loader" class="loader hidden"></div>
+        <ul id="results"></ul>
+      </section>
+    </div>
+  <!-- <header class="header">
     <div class="header-left">
-        <span class="menu-icon">☰</span>
-        <div class="logo">CNN Business</div>
+        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon">
+        <a href="/homepage/index.html" class="logo-link">
+            <img src="/Resources/Images/ui/CNNlogo.png" alt="CNN Homepage" class="logo-image">
+        </a>
+        <a href="/archives/aBusiness.html" class="logo badge-link">Business</a>
     </div>
 
     <nav class="nav-main">
-            <a href="/archives/aPolitics.html" target="_blank">Politics</a>
-            <a href="/archives/aBusiness.html" target="_blank">Business</a>
-            <a href="/archives/aEntertainment.html" target="_blank">Entertainment</a>
+            <a href="/archives/aPolitics.html">Politics</a>
+            <a href="/archives/aBusiness.html">Business</a>
+            <a href="/archives/aEntertainment.html">Entertainment</a>
     </nav>
 
     <div class="header-right">
-        <span class="icon-search">Search</span>
-        <div class="live-btn">LIVE</div>
-        <span class="icon-profile">Profile</span>
+        <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
+        <div class="liv-btn">LIVE</div>
+        <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
+        <img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon">
     </div>
-  </header>
+  </header> -->
 
   <main class="content">
 
@@ -41,28 +106,46 @@
         <h3>Top Stories</h3>
         <div class="card-row">
             <div class="card">
-                <img src="/Resources/Images/cnnBusninessImage.jpg" alt="Stocks Image">
+                <a href="/ArticleView/vArticleViewB.html" class="card-link">
+                    <img src="/Resources/Images/articles/cnnBusninessImage.jpg" alt="Stocks Image">
                 <p>Triple Threat: Geopolitical conflict, shifting trade policies, and volatile AI transition </p>
+                </a>
             </div>
-                        <div class="card">
-                <img src="/Resources/Images/cnnBusninessImage.jpg" alt="Stocks Image">
+
+            <div class="card">
+                <a href="/ArticleView/vArticleViewB.html" class="card-link">
+                    <img src="/Resources/Images/articles/cnnBusninessImage.jpg" alt="Stocks Image">
                 <p>Triple Threat: Geopolitical conflict, shifting trade policies, and volatile AI transition </p>
+                </a>
             </div>
-                        <div class="card">
-                <img src="/Resources/Images/cnnBusninessImage.jpg" alt="Stocks Image">
+
+            <div class="card">
+                <a href="/ArticleView/vArticleViewB.html" class="card-link">
+                    <img src="/Resources/Images/articles/cnnBusninessImage.jpg" alt="Stocks Image">
                 <p>Triple Threat: Geopolitical conflict, shifting trade policies, and volatile AI transition </p>
+                </a>
             </div>
-                        <div class="card">
-                <img src="/Resources/Images/cnnBusninessImage.jpg" alt="Stocks Image">
+
+            <div class="card">
+                <a href="/ArticleView/vArticleViewB.html" class="card-link">
+                    <img src="/Resources/Images/articles/cnnBusninessImage.jpg" alt="Stocks Image">
                 <p>Triple Threat: Geopolitical conflict, shifting trade policies, and volatile AI transition </p>
+                </a>
             </div>
-                        <div class="card">
-                <img src="/Resources/Images/cnnBusninessImage.jpg" alt="Stocks Image">
+
+            <div class="card">
+                <a href="/ArticleView/vArticleViewB.html" class="card-link">
+                    <img src="/Resources/Images/articles/cnnBusninessImage.jpg" alt="Stocks Image">
                 <p>Triple Threat: Geopolitical conflict, shifting trade policies, and volatile AI transition </p>
+                </a>
             </div>
-                        <div class="card">
-                <img src="/Resources/Images/cnnBusninessImage.jpg" alt="Stocks Image">
+
+
+            <div class="card">
+                <a href="/ArticleView/vArticleViewB.html" class="card-link">
+                    <img src="/Resources/Images/articles/cnnBusninessImage.jpg" alt="Stocks Image">
                 <p>Triple Threat: Geopolitical conflict, shifting trade policies, and volatile AI transition </p>
+                </a>
             </div>
         </div>
     </section>
@@ -72,40 +155,55 @@
         <h3>Top Videos</h3>
         <div class="card-row">
             <div class="card">
-                <video width="420" height="340" controls>
+                <a href="/VideoPage/VideoPage.html" class="card-link">
+                    <video width="320" height="240">
                     <source src="/Resources/Videos/cnnEconomy.mp4">
                     Your browser does not support the video tag. 
-                </video>
+                    </video>
                 <p>Iran vs economy: Eten reveals what Americans care more about</p>
+                </a>
             </div>
-             <div class="card">
-                <video width="420" height="340" controls>
+            
+            <div class="card">
+                <a href="/VideoPage/VideoPage.html" class="card-link">
+                    <video width="320" height="240">
                     <source src="/Resources/Videos/cnnEconomy.mp4">
                     Your browser does not support the video tag. 
-                </video>
+                    </video>
                 <p>Iran vs economy: Eten reveals what Americans care more about</p>
+                </a>
             </div>
-             <div class="card">
-                <video width="420" height="340" controls>
+
+            <div class="card">
+                <a href="/VideoPage/VideoPage.html" class="card-link">
+                    <video width="320" height="240">
                     <source src="/Resources/Videos/cnnEconomy.mp4">
                     Your browser does not support the video tag. 
-                </video>
+                    </video>
                 <p>Iran vs economy: Eten reveals what Americans care more about</p>
+                </a>
             </div>
-             <div class="card">
-                <video width="420" height="340" controls>
+
+            <div class="card">
+                <a href="/VideoPage/VideoPage.html" class="card-link">
+                    <video width="320" height="240">
                     <source src="/Resources/Videos/cnnEconomy.mp4">
                     Your browser does not support the video tag. 
-                </video>
+                    </video>
                 <p>Iran vs economy: Eten reveals what Americans care more about</p>
+                </a>
             </div>
-             <div class="card">
-                <video width="420" height="340">
+
+            <div class="card">
+                <a href="/VideoPage/VideoPage.html" class="card-link">
+                    <video width="320" height="240">
                     <source src="/Resources/Videos/cnnEconomy.mp4">
                     Your browser does not support the video tag. 
-                </video>
-                <p>Iran vs economy: Eten reveals what Americans care more about</p>              
+                    </video>
+                <p>Iran vs economy: Eten reveals what Americans care more about</p>
+                </a>
             </div>
+
         </div>
     </section>
 
@@ -113,17 +211,29 @@
         <div class="column">
             <h3>Latest Headlines</h3>
             <h4>Markets</h4>
-            <p>Wall Street Sinks for Fourth Straight Week as Iran Conflict Ends Hopes for 2026 Rate Cuts</p>
-            <p>Gold Technical Bear Market: Mining Stocks Plunge 20% in Massive Sector Rotation</p>
-            <p>AI "Scare Trade" Wipes Out $600B as Anthropic Launch Disrupts Software Giants</p>        
+            <p>Wall Street Sinks for Fourth Straight Week as Iran Conflict Ends Hopes for 2026 Rate Cuts                              
+                <a href="/ArticleView/vArticleViewB.html">></a>              
+            </p>
+            <p>Gold Technical Bear Market: Mining Stocks Plunge 20% in Massive Sector Rotation
+                <a href="/ArticleView/vArticleViewB.html">></a>              
+            </p>
+            <p>AI "Scare Trade" Wipes Out $600B as Anthropic Launch Disrupts Software Giants
+                <a href="/ArticleView/vArticleViewB.html">></a>              
+            </p>        
         </div>
 
         <div class="column">
             <h3>Analysis</h3>
             <h4>Media</h4>
-            <p>The "Answer Economy" Crisis: Newsrooms Forecast 40% Drop in Search Referrals by 2027</p>
-            <p>"Verification is the New Breaking News": Media Watchdogs Launch Digital Chain-of-Custody Standards</p>
-            <p>The "Journalist-as-Brand" Surge: Independent Newsletters Surpass Legacy Desk Reach</p>
+            <p>The "Answer Economy" Crisis: Newsrooms Forecast 40% Drop in Search Referrals by 2027
+                <a href="/ArticleView/vArticleViewB.html">></a>              
+            </p>
+            <p>"Verification is the New Breaking News": Media Watchdogs Launch Digital Chain-of-Custody Standards
+                <a href="/ArticleView/vArticleViewB.html">></a>              
+            </p>
+            <p>The "Journalist-as-Brand" Surge: Independent Newsletters Surpass Legacy Desk Reach
+                <a href="/ArticleView/vArticleViewB.html">></a>              
+            </p>
       </div>
     </section>
     
@@ -136,46 +246,57 @@
     <div class="footer-links-grid">
       
       <div class="footer-column">
-        <h4>US</h4>
-        <a href="#">Crime & Justice</a>
-        <a href="#">Immigration</a>
-        <a href="#">Education</a>
-        <a href="#">Transportation</a>
-        <a href="#">Race & Identity</a>
+        <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
+        <a href="/subcategory/sPolitics.html">US Government</a>
+        <a href="/subcategory/sPolitics.html">United Nations</a>
+        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
+        <a href="/subcategory/sPolitics.html">Election</a>
       </div>
 
       <div class="footer-column">
-        <h4>World</h4>
-        <a href="#">Africa</a>
-        <a href="#">Americas</a>
-        <a href="#">Asia</a>
-        <a href="#">Australia</a>
-        <a href="#">China</a>
-        <a href="#">Europe</a>
+        <a href="/archives/aBusiness.html"><h4>Business</h4></a>
+        <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
+        <a href="/subcategory/sBusiness.html">Media</a>
+        <a href="/subcategory/sBusiness.html">Markets</a>
+        <a href="/subcategory/sBusiness.html">Technology</a>
       </div>
-
+      
       <div class="footer-column">
-        <h4>Politics</h4>
-        <a href="#">Trump</a>
-        <a href="#">Facts First</a>
-        <a href="#">CNN Polls</a>
-        <a href="#">Election</a>
-        <a href="#">Calendar</a>
+        <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
+        <a href="/subcategory/sEntertainment.html">Hollywood</a>
+        <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
+        <a href="/subcategory/sEntertainment.html">Celebrity News</a>
+        <a href="/subcategory/sEntertainment.html">Music</a>
       </div>
-
-      <div class="footer-column">
-        <h4>Business</h4>
-        <a href="#">Tech</a>
-        <a href="#">Media</a>
-        <a href="#">Calculators</a>
-        <a href="#">Videos</a>
-      </div>
-
     </div>
 
     <div class="footer-bottom">
-      <p>Copywriter Info</p>
+        <div class="footer-actions">
+        <a href="/Live/login.html">Watch</a>
+        <span class="divider">|</span>
+        <a href="#" class="btn-signin">Sign in</a>
+      </div>
+
+    <hr class="footer-line">
+
+    <div class="footer-links">
+      <a href="#">Terms of Use</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">About</a>
+
     </div>
-  </footer> 
+
+    <hr class="footer-line">
+    
+    <div class="footer-copywrite">
+        <p>© 2026 Team REKAP. ITIS 4390. Interaction Design Capstone. University of North Carolina at Charlotte.</p>
+    </div>
+
+    </div>
+
+  </footer>
+
+  <script src="/hamburgerScript.js"></script>
+
 </body>
 </html>
