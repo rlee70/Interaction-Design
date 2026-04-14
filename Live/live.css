@@ -468,6 +468,76 @@ section > p {
   color:#888888;
 }
 
+
+/* css for login / sign up*/
+
+.bton {
+  display: inline-flex;
+  align-items: centwe;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 12px;
+  border: 2px solid transparent;
+}
+
+.signup{
+  background-color: limegreen;
+  color: white;
+}
+
+.back{
+  background-color: white;
+  color: red;
+  border-color: red;
+}
+
+.login{
+  background-color: skyblue;
+  color: white;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+
+.container{
+  height: 70vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f3f3;
+}
+
+.card {
+    background: #f3f3f3;
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+
+
+}
+
+.card p{
+font-size: 15px;
+margin-bottom: 10px;
+}
+
+
+
+
+
+
 /* mobile */
 @media (max-width: 600px) {
   .nav-main {
@@ -484,7 +554,4 @@ section > p {
     gap: 24px;
   }
 }
-
-
-
 
