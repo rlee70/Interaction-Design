@@ -242,21 +242,9 @@ margin: 0 auto ;
   cursor: pointer;
 }
 
-<<<<<<< HEAD:archives/aPolitics.css
-
-.liveButton:hover{
-  transform: scale(1.25);
-  transition: 0.2s ease;
-}
-
-.search-icon {
-  width: 36px;
-  height: 36px;
-=======
 .liv-btn:hover {
   background-color: #860000;
   transition: all 0.2s ease;
->>>>>>> main:styles.css
 }
 
 .icon {

@@ -88,16 +88,6 @@ body {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-.live-btn:hover{
-  transform: scale(1.25);
-  transition: 0.2s ease;
-}
-
-.icon-search,
-.icon-profile {
-  font-size: 20px;
-=======
 .liv-btn:hover {
   background-color: #860000;
   transition: all 0.2s ease;
@@ -240,7 +230,6 @@ margin: 0 auto ;
 
 .close-button .hamburger {
   margin: 0;
->>>>>>> main
 }
 
 /* video content */
