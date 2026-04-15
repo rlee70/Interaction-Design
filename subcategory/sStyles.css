@@ -97,6 +97,11 @@ body {
   transition: 0.2s ease;
 }
 
+.live-btn:hover{
+  transform: scale(1.25);
+  transition: 0.2s ease;
+}
+
 .icon {
   font-size: 30px;
 }
