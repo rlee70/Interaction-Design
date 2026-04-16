@@ -237,16 +237,32 @@ margin: 0 auto ;
 .mainSection {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 24px;
-  padding: 40px;
+  gap: 32px;
+  padding: 20px 40px 40px 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 40px 0 40px;
+}
+
 .breadcrumbs p {
-  font-size: 20pt;
+  font-size: 18px;
   color: #000000;
   text-decoration: none;
+}
+
+.breadcrumbs a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+  color: #cc0000;
 }
 
 .videoSection video {
@@ -255,21 +271,49 @@ margin: 0 auto ;
   margin-bottom: 15px;
 }
 
+.videoSection h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.relatedStories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .relatedStories img {
-  width: 120px;
+  width: 100%;
   height: auto;
   padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 .relatedStories h2 {
-  font-size: medium;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #cc0000;
+  margin-bottom: 10px;
   padding: 5px;
 }
 
+.relatedStories a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.relatedStories a:hover {
+  color: #cc0000;
+}
+
 .relatedStories .article {
-  width: 100%;
-  text-align: center;
-  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 /* Category Section */
