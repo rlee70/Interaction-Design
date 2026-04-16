@@ -142,12 +142,14 @@ body {
   background-color: transparent;
   cursor: pointer;
 }
+
 .overlay-button-off {
   border: red;
   background-color: transparent;
   cursor: pointer;
   z-index: 3;
 }
+
 #overlay {
   position: relative;
   top: 100%; /* Position below the header */
