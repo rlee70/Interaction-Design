@@ -4,34 +4,66 @@ i need to make any changed
 
 Header Code:
   <header class="header">
-    <div class="header-left">
-        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon">
+      <div class="header-left">
+        <button
+          class="overlay-button"
+          data-overlay-toggle
+          id="header-hamburger"
+          type="button"
+        >
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </button>
         <a href="/homepage/index.html" class="logo-link">
-            <img src="/Resources/Images/ui/CNNlogo.png" alt="CNN Homepage" class="logo-image">
+          <img
+            src="/Resources/Images/ui/CNNlogo.png"
+            alt="CNN Homepage"
+            class="logo-image"
+          />
         </a>
+      </div>
 
-        ****________________ PLEASE READ - special note about the code line below 
-        NOTE:  THIS IS IMPORTANT!!!! This is a special functionality i added, so every article/video/archive/subcategory page will
-        have this line, and its a little button that goes next to the main CNN logo. So make sure you guys change the link/text
-        and make it respective to the content of the page. Ex. a business video will have the business button, so forth.
-        ________________**** 
+      <nav class="nav-main">
+        <a href="/archives/aPolitics.html">Politics</a>
+        <a href="/archives/aBusiness.html">Business</a>
+        <a href="/archives/aEntertainment.html">Entertainment</a>
+      </nav>
 
-        <a href="/archives/aPolitics.html" class="logo badge-link">Politics</div></a>
+      <div class="header-right">
+        <button class="overlay-button" data-overlay-toggle type="button">
+          <img
+            src="/Resources/Images/ui/search.png"
+            alt="search"
+            class="ui-icon"
+          />
+        </button>
+        <a href="/Live/login.html"><div class="liv-btn">LIVE</div></a>
+        <img
+          src="/Resources/Images/ui/dark-light.png"
+          alt="dark-light"
+          class="ui-icon"
+        />
+        <img
+          src="/Resources/Images/ui/user.png"
+          alt="profile"
+          class="ui-icon"
+        />
+      </div>
+    </header>
+        <div id="overlay">
+      <section class="search-section">
+        <div class="search-header">
+
+        </div>
+        <input type="text" id="search" placeholder="Search navigation..." />
+        <div id="loader" class="loader hidden"></div>
+        <ul id="results"></ul>
+      </section>
     </div>
 
-    <nav class="nav-main">
-            <a href="/archives/aPolitics.html">Politics</a>
-            <a href="/archives/aBusiness.html">Business</a>
-            <a href="/archives/aEntertainment.html">Entertainment</a>
-    </nav>
-
-    <div class="header-right">
-        <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
-        <div class="liv-btn">LIVE</div>
-        <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
-        <img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon">
-    </div>
-  </header>
 
 
  Header CSS File:
@@ -288,4 +320,131 @@ Footer HTML Code:
 .footer-copyright p {
   margin: 5px 0;
   color:#888888;
+}
+
+__________________________________________________________________________________________
+
+Search CSS
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: 0.4s;
+}
+.hamburger {
+  display: flex;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+.overlay-button {
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.overlay-button-off {
+  border: red;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 3;
+}
+#overlay {
+  position: relative;
+  top: 100%; /* Position below the header */
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+#overlay .search-section {
+  width: 100%;
+  max-width: none;
+  background: rgba(0, 0, 0, 0.95);
+  padding: 10px;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search {
+margin: 0 auto ;
+    /* position: relative; */
+  width: 60%;
+  padding: 12px 16px;
+  font-size: 16px;
+  /* border: 2px solid #333; */
+  border-radius: 8px;
+  background: white;
+  color: #333;
+  outline: none;
+}
+
+#search:focus {
+  border-color: crimson;
+}
+
+#results {
+  margin-top: 16px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 40%;
+}
+
+#results a {
+  display: block;
+  padding: 12px 16px;
+  border-bottom: 1px solid #333;
+  color: rgb(15, 116, 0);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+#results a:hover {
+  background-color: rgba(220, 20, 60, 0.2);
+}
+
+#loader {
+  margin-top: 16px;
+  text-align: center;
+  color: white;
+  width: 60%;
+  max-width: 560px;
+}
+
+#overlay .search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 12px;
+  margin-bottom: 18px; */
+}
+
+.close-button {
+  border: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.close-button .hamburger {
+  margin: 0;
 }
