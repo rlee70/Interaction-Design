@@ -13,6 +13,144 @@ body {
 }
 
 /* css for login / sign up*/
+
+main {
+    background-color: #f4f4f4;
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 120px 100px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 1050px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+} 
+
+.card h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+    color:#000000;
+}
+
+.card p {
+    font-size: 18px;    
+    margin-bottom: 40px;
+    color:#000000;
+    text-align: center;
+}
+
+.input-group {
+    background-color: #f7f7f7;
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-content {
+    margin-right: 15px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-content label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #888888;
+  text-transform: capitalize;
+  margin-bottom: 2px;
+}
+
+.input-content input {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: #000;
+  outline: none;
+  padding: 4px 0;
+  width: 100%;
+}
+
+/* Buttons Container */
+.buttons {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 20px; /* Space between buttons */
+  margin-top: 30px;
+}
+
+/* Base Button Styles */
+.bton {
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.bton.cancel, .bton.back {
+  background-color: #ffffff;
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.bton.cancel:hover, .bton.back:hover {
+  background-color: #ef4444 ;
+  color: #ffffff;
+}
+
+.bton.signup-inactive {
+  background-color: #d1d5db; /* Light grey for empty form */
+  color: #6b7280;
+}
+
+.bton.signup-active {
+  background-color: #4caf50; 
+  color: #ffffff;
+}
+
+.bton.signup-active:hover {
+    background-color: #388e3c
+}
+
+.bton.login, .bton.view-live {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.bton.login:hover, .bton.view-live:hover {
+  background-color: #2563eb;
+} 
+
+/* Layout tweak for specific cards */
+.buttons.stacked {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+
+
+
 .bton {
   display: inline-flex;
   align-items: center;
