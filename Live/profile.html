@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CNN Redesign</title>
-  <link rel="stylesheet" href="live.css">
+  <link rel="stylesheet" href="profile.css">
 </head>
 
 <body> 
@@ -30,12 +30,54 @@
     </div>
   </header>
 
-  <main class="live-tv-main">
-    <section class="liveVideoSection">
-      <video autoplay muted playsinline>
-        <source src="/Resources/Videos/cnnLIVE.mp4" type="video/mp4">
-      </video>
-    </section>
+  <main class="profile-dashboard">
+  
+  <aside class="profile-sidebar">
+    <div class="profile-pic-container">
+      <img src="/Resources/Images/ui/user.png" alt="Profile Picture" class="profile-pic">
+    </div>
+    <h1 class="user-name">Alex Smith</h1>
+    <p class="user-email">alex.smith@example.com</p>
+    
+    <button class="bton edit-profile-btn">Edit Profile</button>
+  </aside>
+
+  <section class="profile-content">
+    <h2 class="section-title">Topics You Follow</h2>
+    
+    <div class="news-grid">
+      <article class="news-card">
+        <img src="/Resources/Images/articles/homePageArt.png" alt="Technology News" class="news-thumbnail">
+        <div class="news-info">
+          <span class="news-category">Business</span>
+          <h3>Media/Technology: AI Breakthroughs in 2026</h3>
+          <p>Read about the latest developments in artificial intelligence and machine learning.</p>
+          <a href="/ArticleView/vArticleViewB.html" class="read-more">Read Article ➔</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="/Resources/Images/articles/BuisnessImg.avif" alt="Business News" class="news-thumbnail">
+        <div class="news-info">
+          <span class="news-category">Business</span>
+          <h3>Global Markets: The Strait of Hormuz</h3>
+          <p>Oil prices rise after Trump issues ultimatum and Iran threatens to close the Strait of Hormuz indefinitely.</p>
+          <a href="/VideoPage/VideoPage.html" class="read-more">Watch Video ➔</a>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="/Resources/Images/articles/PoliticsImg.avif" alt="Politics News" class="news-thumbnail">
+        <div class="news-info">
+          <span class="news-category">Politics</span>
+          <h3>US Government: Federal Policies</h3>
+          <p>US Politics: news, videos, reports and analysis</p>
+          <a href="/ArticleView/vArticleViewP.html" class="read-more">Read Article ➔</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
   </main>
 
   <footer class="footer">
