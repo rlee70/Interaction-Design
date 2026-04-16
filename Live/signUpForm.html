@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Project</title>
-    <link rel="stylesheet" href="live.css" />
+    <title>CNN Redesign</title>
+    <link rel="stylesheet" href="form.css" />
   </head>
   <!--Section taken from homepage-->
   <body class="home-page">
@@ -88,21 +88,41 @@
         <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
         <img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon">
     </div>
-</header> -->
+  </header> -->
 
     <!--New section for video-->
     <main>
-      <div class="container">
-        <div class="card">
-          <h2>Uh Oh!</h2>
-          <p>You need to be logged in to view LIVE News.</p>
+        <div class="card signupCard">
+          <h2>Welcome!</h2>
+          <p>Please enter your information to create an account.</p>
 
-          <div class="buttons">
-            <a href="#" class="bton signup">Sign Up</a>
-            <a href="/index.html" class="bton back">Go Back</a>
-            <a href="#" class="bton login">Login</a>
-          </div>
-        </div>
+          <form id="signup-form">
+            <div class="input-group">
+              <div class="input-content">
+                <label>Name</label>
+                <input type="text" placeholder="enter your first and last name" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-content">
+                <label>Email</label>
+                <input type="email" placeholder="enter your email" />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <div class="input-content">
+                <label>Password</label>
+                <input type="password" placeholder="enter your password" />
+              </div>
+            </div>
+
+            <div class="buttons" style="justify-content: space-between; margin-top: 40px;">
+              <a href="/index.html" class="bton cancel">Cancel</a>
+              <a href="/Live/confirmation.html" class="bton signup-active">Sign Up</a>
+            </div>
+          </form>
       </div>
     </main>
 

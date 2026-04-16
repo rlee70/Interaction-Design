@@ -22,6 +22,7 @@ h3 {
   background-color: #ffffff;
   transition: 0.4s;
 }
+
 .hamburger {
   display: flex;
   cursor: pointer;
@@ -570,6 +571,7 @@ figcaption {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
 @media (max-width: 600px) {
   .article-display {
     grid-template-columns: 1fr;
