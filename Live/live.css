@@ -10,6 +10,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
   color: #000000;
+  background-color: #000000;
 }
 
 /* header pragya */
@@ -281,16 +282,6 @@ section > p {
   padding-left: 12px;
 }
 
-/* Trending Sidebar */
-.trending a {
-  text-decoration: none;
-  color: #000000;
-}
-
-.trending a:hover {
-  text-decoration: underline;
-}
-
 /* Live Tab */
 .live-tab {
   flex: 1;
@@ -321,35 +312,31 @@ section > p {
   margin: 0 auto;
 }
 
-.breadcrumbs p {
-  font-size: 20pt;
-  color: #000000;
+.live-tv-main {
+  background-color: #0a0a0a;
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
 }
 
-.videoSection video {
-  padding: 15px;
+.liveVideoSection {
+  width: 100%;
+  background-color: #000000; /* Pure black immediately behind the video */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .liveVideoSection video {
-  padding: 40px;
-}
-
-/* Related Stories */
-.relatedStories img {
-  width: 120px;
-  height: auto;
-  padding: 5px;
-}
-
-.relatedStories h2 {
-  font-size: medium;
-  padding: 5px;
-}
-
-.relatedStories .article {
+  padding: 0; 
   width: 100%;
-  text-align: center;
-  margin: 0 auto 20px;
+  max-width: 1600px; 
+  max-height: 85vh; 
+  object-fit: contain; 
 }
 
 /* Category Section */
@@ -468,67 +455,6 @@ section > p {
 .footer-copyright p {
   margin: 5px 0;
   color: #888888;
-}
-
-/* css for login / sign up*/
-
-.bton {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 24px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 12px;
-  border: 2px solid transparent;
-}
-
-.signup {
-  background-color: limegreen;
-  color: white;
-}
-
-.back {
-  background-color: white;
-  color: red;
-  border-color: red;
-}
-
-.login {
-  background-color: skyblue;
-  color: white;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
-
-.container {
-  height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #f3f3f3;
-}
-
-.card {
-  background: #f3f3f3;
-  padding: 40px;
-  width: 350px;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card h2 {
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 15px;
-  margin-bottom: 10px;
 }
 
 /* mobile */

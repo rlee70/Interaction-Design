@@ -246,6 +246,7 @@ margin: 0 auto ;
 .breadcrumbs p {
   font-size: 20pt;
   color: #000000;
+  text-decoration: none;
 }
 
 .videoSection video {
