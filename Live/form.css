@@ -149,7 +149,11 @@ main {
 
 
 
-
+.error {
+  color: red;
+  font-size: 12px;
+  height: 14px;
+}
 
 .bton {
   display: inline-flex;

@@ -1,6 +1,6 @@
 
 // Week 12 - Now OUTSIDE the search listener
-const form = document.getElementById("contactForm");
+const form = document.getElementById("signup-form");
 const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const passwordInput = document.getElementById("pwd");
@@ -62,7 +62,7 @@ form.addEventListener("submit", (e) => {
 
     // window.location.replace = "loggin.html";
     alert("Registration successful!");
-      window.location.href = "loggin.html";
+      window.location.href = "profile.html";
 
       
     // let registeredUser = localStorage.getItem("registeredUser");

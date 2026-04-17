@@ -6,9 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const registeredUser = JSON.parse(storedData);
     
     //diisplay the info
-    const displayElement = document.getElementById("user-data");
-    if (displayElement) {
-      displayElement.textContent = `${registeredUser.name} - ${registeredUser.email}`;
+    const displayName = document.getElementById("user-name");
+    if (displayName) {
+      displayName.textContent = `${registeredUser.name} `;
+
+    }
+    const displayEmail = document.getElementById("user-email");
+    if (displayEmail) {
+      displayEmail.textContent = `${registeredUser.email} `;
+
     }
   }
 });

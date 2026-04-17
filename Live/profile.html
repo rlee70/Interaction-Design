@@ -1,149 +1,189 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CNN Redesign</title>
-  <link rel="stylesheet" href="profile.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNN Redesign</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
 
-<body> 
-  <header class="header">
-    <div class="header-left">
-        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon">
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon" />
         <a href="/index.html" class="logo-link">
-            <img src="/Resources/Images/ui/CNNlogo.png" alt="CNN Homepage" class="logo-image">
+          <img
+            src="/Resources/Images/ui/CNNlogo.png"
+            alt="CNN Homepage"
+            class="logo-image"
+          />
         </a>
       </div>
 
-    <nav class="nav-main">
-            <a href="/archives/aPolitics.html">Politics</a>
-            <a href="/archives/aBusiness.html">Business</a>
-            <a href="/archives/aEntertainment.html">Entertainment</a>
-    </nav>
+      <nav class="nav-main">
+        <a href="/archives/aPolitics.html">Politics</a>
+        <a href="/archives/aBusiness.html">Business</a>
+        <a href="/archives/aEntertainment.html">Entertainment</a>
+      </nav>
 
-    <div class="header-right">
-        <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
+      <div class="header-right">
+        <img
+          src="/Resources/Images/ui/search.png"
+          alt="search"
+          class="ui-icon"
+        />
         <a href="/Live/login.html"><div class="liv-btn">LIVE</div></a>
-        <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
-        <img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon">
-    </div>
-  </header>
-          <div id="overlay">
+        <img
+          src="/Resources/Images/ui/dark-light.png"
+          alt="dark-light"
+          class="ui-icon"
+        />
+        <img
+          src="/Resources/Images/ui/user.png"
+          alt="profile"
+          class="ui-icon"
+        />
+      </div>
+    </header>
+    <div id="overlay">
       <section class="search-section">
-        <div class="search-header">
-
-        </div>
+        <div class="search-header"></div>
         <input type="text" id="search" placeholder="Search navigation..." />
         <div id="loader" class="loader hidden"></div>
         <ul id="results"></ul>
       </section>
     </div>
 
-  <main class="profile-dashboard">
-  
-  <aside class="profile-sidebar">
-    <div class="profile-pic-container">
-      <img src="/Resources/Images/ui/user.png" alt="Profile Picture" class="profile-pic">
-    </div>
-    <h1 class="user-name">Alex Smith</h1>
-    <p class="user-email">alex.smith@example.com</p>
-    
-    <button class="bton edit-profile-btn">Edit Profile</button>
-  </aside>
-
-  <section class="profile-content">
-    <h2 class="section-title">Topics You Follow</h2>
-    
-    <div class="news-grid">
-      <article class="news-card">
-        <img src="/Resources/Images/articles/homePageArt.png" alt="Technology News" class="news-thumbnail">
-        <div class="news-info">
-          <span class="news-category">Business</span>
-          <h3>Media/Technology: AI Breakthroughs in 2026</h3>
-          <p>Read about the latest developments in artificial intelligence and machine learning.</p>
-          <a href="/ArticleView/vArticleViewB.html" class="read-more">Read Article ➔</a>
+    <main class="profile-dashboard">
+      <aside class="profile-sidebar">
+        <div class="profile-pic-container">
+          <img
+            src="/Resources/Images/ui/user.png"
+            alt="Profile Picture"
+            class="profile-pic"
+          />
         </div>
-      </article>
+        <div class="user-name" id="user-name"></div>
+        <p class="user-email" id="user-email">alex.smith@example.com</p>
+        <button id="logout-btn">Log Out</button>
+      </aside>
 
-      <article class="news-card">
-        <img src="/Resources/Images/articles/BuisnessImg.avif" alt="Business News" class="news-thumbnail">
-        <div class="news-info">
-          <span class="news-category">Business</span>
-          <h3>Global Markets: The Strait of Hormuz</h3>
-          <p>Oil prices rise after Trump issues ultimatum and Iran threatens to close the Strait of Hormuz indefinitely.</p>
-          <a href="/VideoPage/VideoPage.html" class="read-more">Watch Video ➔</a>
+      <section class="profile-content">
+        <h2 class="section-title">Topics You Follow</h2>
+
+        <div class="news-grid">
+          <article class="news-card">
+            <img
+              src="/Resources/Images/articles/homePageArt.png"
+              alt="Technology News"
+              class="news-thumbnail"
+            />
+            <div class="news-info">
+              <span class="news-category">Business</span>
+              <h3>Media/Technology: AI Breakthroughs in 2026</h3>
+              <p>
+                Read about the latest developments in artificial intelligence
+                and machine learning.
+              </p>
+              <a href="/ArticleView/vArticleViewB.html" class="read-more"
+                >Read Article ➔</a
+              >
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="/Resources/Images/articles/BuisnessImg.avif"
+              alt="Business News"
+              class="news-thumbnail"
+            />
+            <div class="news-info">
+              <span class="news-category">Business</span>
+              <h3>Global Markets: The Strait of Hormuz</h3>
+              <p>
+                Oil prices rise after Trump issues ultimatum and Iran threatens
+                to close the Strait of Hormuz indefinitely.
+              </p>
+              <a href="/VideoPage/VideoPage.html" class="read-more"
+                >Watch Video ➔</a
+              >
+            </div>
+          </article>
+
+          <article class="news-card">
+            <img
+              src="/Resources/Images/articles/PoliticsImg.avif"
+              alt="Politics News"
+              class="news-thumbnail"
+            />
+            <div class="news-info">
+              <span class="news-category">Politics</span>
+              <h3>US Government: Federal Policies</h3>
+              <p>US Politics: news, videos, reports and analysis</p>
+              <a href="/ArticleView/vArticleViewP.html" class="read-more"
+                >Read Article ➔</a
+              >
+            </div>
+          </article>
         </div>
-      </article>
+      </section>
+    </main>
 
-      <article class="news-card">
-        <img src="/Resources/Images/articles/PoliticsImg.avif" alt="Politics News" class="news-thumbnail">
-        <div class="news-info">
-          <span class="news-category">Politics</span>
-          <h3>US Government: Federal Policies</h3>
-          <p>US Politics: news, videos, reports and analysis</p>
-          <a href="/ArticleView/vArticleViewP.html" class="read-more">Read Article ➔</a>
+    <footer class="footer">
+      <div class="footer-links-grid">
+        <div class="footer-column">
+          <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
+          <a href="/subcategory/sPolitics.html">US Government</a>
+          <a href="/subcategory/sPolitics.html">United Nations</a>
+          <a href="/subcategory/sPolitics.html">Crime and Justice</a>
+          <a href="/subcategory/sPolitics.html">Election</a>
         </div>
-      </article>
-    </div>
-  </section>
 
-  </main>
+        <div class="footer-column">
+          <a href="/archives/aBusiness.html"><h4>Business</h4></a>
+          <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
+          <a href="/subcategory/sBusiness.html">Media</a>
+          <a href="/subcategory/sBusiness.html">Markets</a>
+          <a href="/subcategory/sBusiness.html">Technology</a>
+        </div>
 
-  <footer class="footer">
-    <div class="footer-links-grid">
-      
-      <div class="footer-column">
-        <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
-        <a href="/subcategory/sPolitics.html">US Government</a>
-        <a href="/subcategory/sPolitics.html">United Nations</a>
-        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
-        <a href="/subcategory/sPolitics.html">Election</a>
+        <div class="footer-column">
+          <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
+          <a href="/subcategory/sEntertainment.html">Hollywood</a>
+          <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
+          <a href="/subcategory/sEntertainment.html">Celebrity News</a>
+          <a href="/subcategory/sEntertainment.html">Music</a>
+        </div>
       </div>
 
-      <div class="footer-column">
-        <a href="/archives/aBusiness.html"><h4>Business</h4></a>
-        <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
-        <a href="/subcategory/sBusiness.html">Media</a>
-        <a href="/subcategory/sBusiness.html">Markets</a>
-        <a href="/subcategory/sBusiness.html">Technology</a>
-      </div>
-      
-      <div class="footer-column">
-        <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
-        <a href="/subcategory/sEntertainment.html">Hollywood</a>
-        <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
-        <a href="/subcategory/sEntertainment.html">Celebrity News</a>
-        <a href="/subcategory/sEntertainment.html">Music</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
+      <div class="footer-bottom">
         <div class="footer-actions">
-        <a href="/Live/login.html">Watch</a>
-        <span class="divider">|</span>
-        <a href="#" class="btn-signin">Sign in</a>
+          <a href="/Live/login.html">Watch</a>
+          <span class="divider">|</span>
+          <a href="#" class="btn-signin">Sign in</a>
+        </div>
+
+        <hr class="footer-line" />
+
+        <div class="footer-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">About</a>
+        </div>
+
+        <hr class="footer-line" />
+
+        <div class="footer-copywrite">
+          <p>
+            © 2026 Team REKAP. ITIS 4390. Interaction Design Capstone.
+            University of North Carolina at Charlotte.
+          </p>
+        </div>
       </div>
+    </footer>
 
-    <hr class="footer-line">
-
-    <div class="footer-links">
-      <a href="#">Terms of Use</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">About</a>
-    </div>
-
-    <hr class="footer-line">
-    
-    <div class="footer-copywrite">
-        <p>© 2026 Team REKAP. ITIS 4390. Interaction Design Capstone. University of North Carolina at Charlotte.</p>
-    </div>
-
-    </div>
-  </footer>
-
-  <script src="/hamburgerScript.js"></script>
-
-</body>
+    <script src="/hamburgerScript.js"></script>
+    <script src="/dash.js"></script>
+    <script src="/login.js"></script>
+  </body>
 </html>
-        

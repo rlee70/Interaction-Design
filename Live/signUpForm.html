@@ -75,28 +75,31 @@
           <form id="signup-form">
             <div class="input-group">
               <div class="input-content">
-                <label>Name</label>
-                <input type="text" placeholder="enter your first and last name" />
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="enter your first and last name" />
+                <small class="error"></small>
               </div>
             </div>
 
             <div class="input-group">
               <div class="input-content">
-                <label>Email</label>
-                <input type="email" placeholder="enter your email" />
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="enter your email" />
+                <small class="error"></small>
               </div>
             </div>
 
             <div class="input-group">
               <div class="input-content">
-                <label>Password</label>
-                <input type="password" placeholder="enter your password" />
+                <label for="pwd">Password</label>
+                <input type="password" id="pwd" placeholder="enter your password" />
+                <small class="error"></small>
               </div>
             </div>
 
             <div class="buttons" style="justify-content: space-between; margin-top: 40px;">
               <a href="/index.html" class="bton cancel">Cancel</a>
-              <a href="/Live/confirmation.html" class="bton signup-active">Sign Up</a>
+              <button type="submit" class="bton signup-active">Sign Up</button>
             </div>
           </form>
       </div>
@@ -155,5 +158,7 @@
       </div>
     </footer>
     <script src="/hamburgerScript.js"></script>
+        <script src="/register.js"></script>
+
   </body>
 </html>
