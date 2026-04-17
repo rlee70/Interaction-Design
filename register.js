@@ -59,6 +59,7 @@ form.addEventListener("submit", (e) => {
   } else {
     // alert("Form submitted");
     localStorage.setItem("registeredUser", JSON.stringify(userData));
+      localStorage.setItem("isLoggedIn", "true");
 
     // window.location.replace = "loggin.html";
     alert("Registration successful!");

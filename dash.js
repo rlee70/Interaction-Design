@@ -18,13 +18,14 @@ document.addEventListener("DOMContentLoaded", () => {
     displayEmail.textContent = `${user.email} `;
   }
 
-  
+
   //logoutFunction
 
   document.getElementById("logout-btn").addEventListener("click", () => {
-    //deleete session
+
+    //deleete session data to simulate logout
     localStorage.removeItem("isLoggedIn");
     alert("Logged out successfully");
-    window.location.href = "index.html";
+    window.location.href = "/index.html";
   });
 });

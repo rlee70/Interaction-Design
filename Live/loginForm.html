@@ -77,21 +77,34 @@
             <div class="input-group">
               <div class="input-content">
                 <label>Email</label>
-                <input type="email" placeholder="enter your email" />
+                <input
+                  id="login-email"
+                  type="email"
+                  placeholder="enter your email"
+                />
+                <small class="error"></small>
               </div>
             </div>
 
             <div class="input-group">
               <div class="input-content">
                 <label>Password</label>
-                <input type="password" placeholder="enter your password" />
+                <input
+                  id="login-pass"
+                  type="password"
+                  placeholder="enter your password"
+                />
               </div>
             </div>
 
-            <div class="buttons" style="justify-content: space-between; margin-top: 40px;">
+            <div
+              class="buttons"
+              style="justify-content: space-between; margin-top: 40px"
+            >
               <a href="index.html" class="bton cancel">Cancel</a>
-              <a href="confirmation.html" class="bton signup-active">Log In</a>            
-          </div>
+              <button type="submit" class="bton signup-active">Log In</button>
+              <!-- <a href="confirmation.html" class="bton signup-active">Log In</a>             -->
+            </div>
           </form>
         </div>
       </div>
@@ -150,6 +163,6 @@
       </div>
     </footer>
     <script src="/hamburgerScript.js"></script>
-    <script src="/register.js"></script>
+    <script src="/login.js"></script>
   </body>
 </html>
