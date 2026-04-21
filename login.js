@@ -35,6 +35,7 @@ loginForm.addEventListener("submit", (e) => {
 
     // check local data(storedData) for matching email and password
     if (emailInput === user.email && passInput === user.password) {
+      
 //create psudoe session item for dash.js to ceck
       localStorage.setItem("isLoggedIn", "true");
       window.location.href = "confirmation.html"; // Redirect to a "logged in" page

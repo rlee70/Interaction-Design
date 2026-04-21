@@ -42,6 +42,8 @@ passwordInput.addEventListener("input", () => {
 });
 /* ---------- SUBMIT ---------- */
 form.addEventListener("submit", (e) => {
+  localStorage.removeItem("isLoggedIn");
+
   e.preventDefault();
 
   const userData = {
