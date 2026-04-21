@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  //logoutFunction
+  //logoutFunctiondf
 
   document.getElementById("logout-btn").addEventListener("click", () => {
 
