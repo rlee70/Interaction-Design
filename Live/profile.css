@@ -5,33 +5,51 @@
   box-sizing: border-box;
 }
 
-/* BASE STYLES */
+/* DARK MODE VARIABLES*/
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f4f4f4;
+  --border-color: #dddddd;
+}
+
+body.dark-mode {
+  --bg-color: #121212; /* Deep gray/black */
+  --text-color: #e0e0e0; /* Soft white for readability */
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+}
+
+/* BASE STYLES & VARIABLE APPLICATION */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  color: #000000;
+  
+  /* Applying the variables here! */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+  /* Smooth transition when toggling */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 
-/* PROFILE DASHBOARD CONTAINER */
 .profile-dashboard {
   display: flex;
-  min-height: 100vh; /* Fills the whole laptop screen */
-  background-color: #f4f4f4; /* Soft background to make the white cards pop */
+  min-height: 100vh; 
+  background-color: var(--card-bg); /* Changed from #f4f4f4 to variable */
   font-family: Arial, sans-serif;
 }
 
-/* ================================
-   LEFT SIDEBAR (Profile Info)
-   ================================ */
+/* profile */
 .profile-sidebar {
   width: 350px;
-  background-color: #ffffff;
+  background-color: var(--bg-color); /* Changed from #ffffff to variable */
   padding: 60px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05); /* Soft shadow on the right edge */
+  box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05); 
   z-index: 2; /* Keeps the shadow above the gray background */
 }
 
@@ -41,7 +59,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
-  border: 4px solid #eaeaea;
+  border: 4px solid var(--border-color); /* Applied border variable */
 }
 
 .profile-pic {
@@ -52,7 +70,7 @@ body {
 
 .user-name {
   font-size: 28px;
-  color: #000000;
+  color: var(--text-color); /* Changed from #000000 to variable */
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -64,17 +82,17 @@ body {
 }
 
 .edit-profile-btn {
-  background-color: #ffffff ;
-  color: #000000 ;
-  border: 2px solid #000000 ;
+  background-color: var(--bg-color); /* Changed from #ffffff to variable */
+  color: var(--text-color); /* Changed from #000000 to variable */
+  border: 2px solid var(--text-color); /* Changed from #000000 to variable */
   width: 100%;
 }
 
 .edit-profile-btn:hover {
   background-color: crimson;
   color: #ffffff;
+  border-color: crimson;
 }
-
 /*RIGHT CONTENT (News Interests)*/
 .profile-content {
   flex: auto; 
@@ -84,7 +102,7 @@ body {
 .section-title {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #000000;
+  color: var(--text-color); /* Changed from #000000 to variable */
   border-bottom: 3px solid crimson;
   display: inline-block;
   padding-bottom: 10px;
@@ -98,7 +116,7 @@ body {
 
 /* NEWS CARDS */
 .news-card {
-  background-color: #ffffff;
+  background-color: var(--bg-color); /* Changed from #ffffff to variable */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -117,7 +135,7 @@ body {
 
 .news-card h3 {
   font-size: 20px;
-  color: #000000;
+  color: var(--text-color); /* Changed from #000000 to variable */
   margin-bottom: 10px;
   line-height: 1.3;
 }
@@ -140,6 +158,7 @@ body {
   color: #860000;
 }
 
+/* HEADER */
 /* HEADER */
 .header {
   display: flex;

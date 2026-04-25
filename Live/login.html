@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="form.css">
 </head>
   <body class="home-page">
-      <header class="header">
+    <header class="header">
       <div class="header-left">
         <button
           class="overlay-button"
@@ -36,29 +36,29 @@
         <a href="/archives/aEntertainment.html">Entertainment</a>
       </nav>
 
-      <div class="header-right">
-        <button class="overlay-button" data-overlay-toggle type="button">
+    <div class="header-right">
+ <button class="overlay-button" data-overlay-toggle type="button">
           <img
-            src="/Resources/Images/ui/search.png"
+            src="/Resources/Images/ui/search.svg"
             alt="search"
-            class="ui-icon"
+            class="search-icon"
           />
         </button>
-        <a href="/Live/login.html"><div class="liv-btn">LIVE</div></a>
-        <img
-          src="/Resources/Images/ui/dark-light.png"
-          alt="dark-light"
-          class="ui-icon"
-        />
+        <a href="/Live/live.html"><div class="liv-btn">LIVE</div></a>
+        <button id="theme-toggle" class="overlay-button" type="button" style="border: none; background: transparent; padding: 0;"> 
+          <img src="/Resources/Images/ui/dark-light.png" alt="Toggle Dark Mode" class="ui-icon" style="cursor: pointer;">
+        </button> 
+       
         <a href="/Live/profile.html">
-        <img
-          src="/Resources/Images/ui/user.png"
-          alt="profile"
-          class="ui-icon"
-        />
-      </a>
+          <img
+            src="/Resources/Images/ui/user.svg"
+            alt="profile"
+            class="user-icon"
+          />
+        </a>
       </div>
     </header>
+
         <div id="overlay">
       <section class="search-section">
         <div class="search-header">
@@ -138,5 +138,7 @@
 
   </footer>
   <script src="/hamburgerScript.js"></script>
+    <script src="/theme.js"></script>
+
 </body>
 </html>

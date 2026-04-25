@@ -5,11 +5,32 @@
   box-sizing: border-box;
 }
 
-/* BASE STYLES */
+/* DARK MODE VARIABLES*/
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --card-bg: #f4f4f4;
+  --border-color: #dddddd;
+}
+
+body.dark-mode {
+  --bg-color: #121212; /* Deep gray/black */
+  --text-color: #e0e0e0; /* Soft white for readability */
+  --card-bg: #1e1e1e;
+  --border-color: #333333;
+}
+
+/* BASE STYLES & VARIABLE APPLICATION */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.5;
-  color: #000000;
+  
+  /* Applying the variables here! */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+  /* Smooth transition when toggling */
+  transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
 /* HEADER */
@@ -313,6 +334,15 @@ body {
   text-align: left;
   margin-right: 45%;
   margin-left: 2%;
+}
+
+h3 a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+h3 a:hover {
+  text-decoration: underline;
 }
 
 p {
