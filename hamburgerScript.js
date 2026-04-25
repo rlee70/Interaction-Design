@@ -90,3 +90,30 @@ li.style.color = "white";
     });
   }, 300); 
 });
+
+//darkmode toggle
+
+let root = document.querySelector(":root");
+const darkModeButton = document.getElementById("dark-mode-toggle");
+
+darkModeButton.addEventListener('click', (e) => {
+  e.preventDefault();
+//toggles DARK  for root element
+  document.documentElement.classList.toggle('dark');
+  // keep in localStorage to keep consistency across pages
+  if (document.documentElement.classList.contains('dark')) {
+    localStorage.setItem('theme', 'dark');
+  } else {
+    localStorage.setItem('theme', 'light');
+  }
+});
+
+// On page load, set theme from localStorage if available
+window.addEventListener('DOMContentLoaded', () => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
+});
