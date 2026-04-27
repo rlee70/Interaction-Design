@@ -132,6 +132,7 @@ body {
 .ui-icon:hover {
   opacity: 0.7;
   transition: opacity 0.2s ease;
+  
 }
 
 
@@ -284,11 +285,35 @@ story-section h3 {
   margin-bottom: 20px;
 }
 
-/*creating horizontal row for cards */
+/* HORIZONTAL SCROLLING ROW */
 .card-row {
   display: flex;
   gap: 15px;
-  overflow: hidden;    /*not adding scrolling feature yet to keep page static for now */
+  overflow-x: auto; /* This turns on the horizontal scroll! */
+  padding-bottom: 15px; /* Gives the scrollbar some breathing room */
+  
+  /* Optional but recommended: Adds app-like snapping */
+  scroll-snap-type: x mandatory; 
+  scroll-behavior: smooth;
+}
+
+/* INDIVIDUAL SCROLLING CARDS */
+.card {
+  width: 320px;
+  flex-shrink: 0; /* Prevents the browser from squishing the cards to fit the screen */
+  scroll-snap-align: start; /* Tells the browser to snap the left edge of the card */
+}
+
+/* Optional: Hide the ugly default scrollbar for a cleaner look */
+.card-row::-webkit-scrollbar {
+  height: 8px;
+}
+.card-row::-webkit-scrollbar-track {
+  background: transparent;
+}
+.card-row::-webkit-scrollbar-thumb {
+  background-color: var(--color-gray-border);
+  border-radius: 10px;
 }
 
 /* horizontal scrolling row of story cards */
@@ -300,9 +325,64 @@ story-section h3 {
   padding-bottom: 8px;
 }
 
+.scroll-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Keeps the title and indicator aligned at the bottom */
+  margin-bottom: 15px;
+  padding-right: 15px; /* Keeps the text from touching the edge of the screen */
+}
+
+.scroll-prompt {
+  font-size: 14px;
+  color: var(--color-crimson); 
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.scroll-prompt .arrow {
+  display: inline-block;
+  animation: bounceRight 1.5s infinite; /* Draws the eye to the right */
+}
+
+@keyframes bounceRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+
 .card {
   width: 320px;
   flex-shrink: 0;
+  scroll-snap-align: start;
+  
+  /* New Hover Styling base */
+  background-color: var(--color-white); /* Adapts to light/dark mode */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle resting shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Lift and cast a bigger shadow when hovered */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-link video,
+.card img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0; /* Changed from 10px */
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.card p {
+  font-size: 15px;
+  line-height: 1.4;
+  padding: 16px; /* Added padding so text doesn't touch the edges */
+  margin: 0;
 }
 
 .card-link {
