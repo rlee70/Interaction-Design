@@ -4,17 +4,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-/*SHADOWS*/
-  :root { 
-    --shadow-main-article: 0 6px 15px 0 rgba(0, 0, 0, 0.13), 0 1.5px 4px 0 rgba(0, 0, 0, 0.07);
-    --shadow-story-card: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.05);
-    --shadow-story-card-hover: 0 5px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-    --shadow-story-card-dark: 0 4px 5px 0 rgb(108, 108, 108), 0 1px 3px 0 rgba(255, 255, 255, 0.1);
-    --shadow-story-card-hover-dark: 0 5px 5px 0 rgb(103, 103, 103), 0 2px 6px 0 rgba(255, 255, 255, 0.1);
-    --border-color-dark: #535353;
-  }
-
-
 
 /* DARK MODE VARIABLES*/
 :root {
@@ -22,6 +11,11 @@
   --text-color: #000000;
   --card-bg: #f4f4f4;
   --border-color: #dddddd;
+  --shadow-story-card: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+  --shadow-story-card-hover: 0 5px 5px 0 rgba(0, 0, 0, 0.15), 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+  --shadow-story-card-dark: 0 4px 5px 0 rgb(42, 42, 42), 0 1px 3px 0 rgba(255, 255, 255, 0.1);
+  --shadow-story-card-hover-dark: 0 5px 5px 0 rgb(58, 58, 58), 0 2px 6px 0 rgba(255, 255, 255, 0.1);
+  --border-color-dark: #313131;
 }
 
 body.dark-mode {
