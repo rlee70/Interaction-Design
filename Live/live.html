@@ -25,8 +25,9 @@
     <div class="header-right">
         <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
         <a href="/Live/login.html"><div class="liv-btn">LIVE</div></a>
-        <img src="/Resources/Images/ui/dark-light.png" alt="dark-light" class="ui-icon">
-        <a href="/Live/profile.html"><img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon"/> </a>
+        <button id="theme-toggle" class="overlay-button" type="button" style="border: none; background: transparent; padding: 0;"> 
+          <img src="/Resources/Images/ui/dark-light.png" alt="Toggle Dark Mode" class="ui-icon" style="cursor: pointer;">
+        </button>         <a href="/Live/profile.html"><img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon"/> </a>
     </div>
   </header>
           <div id="overlay">
@@ -102,6 +103,8 @@
 
   <script src="/hamburgerScript.js"></script>
   <script src="/dash.js"></script>
+    <script src="/theme.js"></script>
+
 
 </body>
 </html>

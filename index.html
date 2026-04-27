@@ -22,7 +22,7 @@
             <span class="bar"></span>
           </div>
         </button>
-        <a href="/homepage/index.html" class="logo-link">
+        <a href="/index.html" class="logo-link">
           <img
             src="/Resources/Images/ui/CNNlogo.png"
             alt="CNN Homepage"
@@ -37,8 +37,8 @@
         <a href="/archives/aEntertainment.html">Entertainment</a>
       </nav>
 
-    <div class="header-right">
- <button class="overlay-button" data-overlay-toggle type="button">
+      <div class="header-right">
+        <button class="overlay-button" data-overlay-toggle type="button">
           <img
             src="/Resources/Images/ui/search.svg"
             alt="search"
@@ -46,12 +46,10 @@
           />
         </button>
         <a href="/Live/live.html"><div class="liv-btn">LIVE</div></a>
-        <button id="dark-mode-toggle" class="dark-mode" type="button"> <img
-          src="/Resources/Images/ui/dark-light.png"
-          alt="dark-light"
-          class="ui-icon"
-        /> </button> 
-       
+        <button id="theme-toggle" class="overlay-button" type="button" style="border: none; background: transparent; padding: 0;"> 
+          <img src="/Resources/Images/ui/dark-light.png" alt="Toggle Dark Mode" class="ui-icon" style="cursor: pointer;">
+        </button> 
+        
         <a href="/Live/profile.html">
           <img
             src="/Resources/Images/ui/user.svg"
@@ -60,19 +58,11 @@
           />
         </a>
       </div>
-  
     </header>
+
     <div id="overlay">
       <section class="search-section">
         <div class="search-header">
-          <!-- <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">            <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            </button>
-            <h2>Search navigation</h2>-->
         </div>
         <input type="text" id="search" placeholder="Search navigation..." />
         <div id="loader" class="loader hidden"></div>
@@ -80,23 +70,6 @@
       </section>
     </div>
     
-    <div id="overlay">
-      <section class="search-section">
-        <div class="search-header">
-          <!-- <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">            <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">
-              <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-              </div>
-            </button>
-            <h2>Search navigation</h2>-->
-        </div>
-        <input type="text" id="search" placeholder="Search navigation..." />
-        <div id="loader" class="loader hidden"></div>
-        <ul id="results"></ul>
-      </section>
-    </div>
     <main class="content">
       <div class="main-layout">
         <section class="main-article">
@@ -108,13 +81,12 @@
               class="main-art"
             />
           </div>
-          <small style="margin-left: 4px; color: gray">By Dawg Rain, CNN</small>
-          <a href="ArticleView/vArticleViewP.html"
-            ><p style="margin-top: 8px; margin-left: 4px">
+          <small style="margin-left: 4px; color: var(--text-color2); opacity: 0.7;">By Dawg Rain, CNN</small>
+          <a href="ArticleView/vArticleViewP.html">
+            <p style="margin-top: 8px; margin-left: 4px">
             The war in Iran is in its fourth week: here's what you should know
-          </p></a>
-
-          
+            </p>
+          </a>
         </section>
 
         <aside class="trending">
@@ -148,6 +120,7 @@
             </li>
           </ul>
         </aside>
+        
         <aside class="live-tab">
           <section class="live-content">
             <div class="live-video">
@@ -159,10 +132,11 @@
               /></a>
 
               <p>
-                Short description of video: <br />
-
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                A 10-minute video essay dissecting the economics of 'Quiet Quitting' has 
+                garnered over 50 million views on professional networking sites this week, 
+                prompting Fortune 500 companies to hastily rewrite their employee retention 
+                policies. 
+                <br>
               </p>
             </div>
             <div>
@@ -187,22 +161,17 @@
       <div class="article-display">
         <span class="article">
           <a href="subcategory/sBusiness.html">
-            
             <figure>
               <img
                 src="Resources/Images/articles/homePageArt.png"
                 alt="macBook prices article"
               />
-
               <figcaption>
-                
                 Apple Announces New its cheapest <br />
                 laptop ever
               </figcaption>
-
             </figure>
-                <small style="color: gray; position:relative;  left: 100px; margin:0;">By Jawn Ning, CNN</small>
-
+            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
           </a>
         </span>
         <span class="article">
@@ -212,14 +181,12 @@
                 src="Resources/Images/articles/homePageArt.png"
                 alt="macBook prices article"
               />
-
               <figcaption>
                 Apple Announces New its cheapest <br />
                 laptop ever
               </figcaption>
             </figure>
-                            <small style="color: gray; position:relative;  left: 100px; margin:0;">By Jawn Ning, CNN</small>
-
+            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
           </a>
         </span>
         <span class="article">
@@ -229,14 +196,12 @@
                 src="Resources/Images/articles/homePageArt.png"
                 alt="macBook prices article"
               />
-
               <figcaption>
                 Apple Announces New its cheapest <br />
                 laptop ever
               </figcaption>
             </figure>
-                            <small style="color: gray; position:relative;  left: 100px; margin:0;">By Jawn Ning, CNN</small>
-
+            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
           </a>
         </span>
         <span class="article">
@@ -246,14 +211,12 @@
                 src="Resources/Images/articles/homePageArt.png"
                 alt="macBook prices article"
               />
-
               <figcaption>
                 Apple Announces New its cheapest <br />
                 laptop ever
               </figcaption>
             </figure>
-                            <small style="color: gray; position:relative;  left: 100px; margin:0;">By Jawn Ning, CNN</small>
-
+            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
           </a>
         </span>
         <span class="article">
@@ -263,14 +226,12 @@
                 src="Resources/Images/articles/homePageArt.png"
                 alt="macBook prices article"
               />
-
               <figcaption>
                 Apple Announces New its cheapest <br />
                 laptop ever
               </figcaption>
             </figure>
-                            <small style="color: gray; position:relative;  left: 100px; margin:0;">By Jawn Ning, CNN</small>
-
+            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
           </a>
         </span>
         <span class="article">
@@ -280,19 +241,18 @@
                 src="Resources/Images/articles/homePageArt.png"
                 alt="macBook prices article"
               />
-
               <figcaption>
                 Apple Announces New its cheapest <br />
                 laptop ever
               </figcaption>
             </figure>
-                            <small style="color: gray; position:relative;  left: 100px; margin:0;">By Jawn Ning, CNN</small>
-
+            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
           </a>
         </span>
       </div>
     </main>
     <script src="hamburgerScript.js"></script>
+    <script src="/theme.js"></script>
   </body>
 
   <footer class="footer">
