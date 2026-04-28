@@ -1,111 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CNN Redesign</title>
-  <link rel="stylesheet" href="live.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CNN Redesign</title>
+    <link rel="stylesheet" href="live.css" />
+  </head>
 
-<body> 
-  <header class="header">
-    <div class="header-left">
-        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon">
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <img src="/Resources/Images/ui/menu.png" alt="menu" class="ui-icon" />
         <a href="/index.html" class="logo-link">
-            <img src="/Resources/Images/ui/CNNlogo.png" alt="CNN Homepage" class="logo-image">
+          <img
+            src="/Resources/Images/ui/CNNlogo.png"
+            alt="CNN Homepage"
+            class="logo-image"
+          />
         </a>
       </div>
 
-    <nav class="nav-main">
-            <a href="/archives/aPolitics.html">Politics</a>
-            <a href="/archives/aBusiness.html">Business</a>
-            <a href="/archives/aEntertainment.html">Entertainment</a>
-    </nav>
+      <nav class="nav-main">
+        <a href="/archives/aPolitics.html">Politics</a>
+        <a href="/archives/aBusiness.html">Business</a>
+        <a href="/archives/aEntertainment.html">Entertainment</a>
+      </nav>
 
-    <div class="header-right">
-        <img src="/Resources/Images/ui/search.png" alt="search" class="ui-icon">
+      <div class="header-right">
+        <img
+          src="/Resources/Images/ui/search.svg"
+          alt="search"
+          class="ui-icon"
+        />
         <a href="/Live/login.html"><div class="liv-btn">LIVE</div></a>
-        <button id="theme-toggle" class="overlay-button" type="button" style="border: none; background: transparent; padding: 0;"> 
-          <img src="/Resources/Images/ui/dark-light.png" alt="Toggle Dark Mode" class="ui-icon" style="cursor: pointer;">
-        </button>         <a href="/Live/profile.html"><img src="/Resources/Images/ui/user.png" alt="profile" class="ui-icon"/> </a>
-    </div>
-  </header>
-          <div id="overlay">
+        <button
+          id="theme-toggle"
+          class="overlay-button"
+          type="button"
+          style="border: none; background: transparent; padding: 0"
+        >
+          <img
+            src="/Resources/Images/ui/dark-light.png"
+            alt="Toggle Dark Mode"
+            class="ui-icon"
+            style="cursor: pointer"
+          />
+        </button>
+        <a href="/Live/profile.html"
+          ><img
+            src="/Resources/Images/ui/user.svg"
+            alt="profile"
+            class="ui-icon"
+          />
+        </a>
+      </div>
+    </header>
+    <div id="overlay">
       <section class="search-section">
-        <div class="search-header">
-
-        </div>
+        <div class="search-header"></div>
         <input type="text" id="search" placeholder="Search navigation..." />
         <div id="loader" class="loader hidden"></div>
         <ul id="results"></ul>
       </section>
     </div>
 
-  <main class="live-tv-main">
-    <section class="liveVideoSection">
-      <video autoplay muted playsinline>
-        <source src="/Resources/Videos/cnnLIVE.mp4" type="video/mp4">
-      </video>
-    </section>
-  </main>
+    <main class="live-tv-main">
+      <section class="liveVideoSection">
+        <video autoplay muted playsinline>
+          <source src="/Resources/Videos/cnnLIVE.mp4" type="video/mp4" />
+        </video>
+      </section>
+    </main>
 
-  <footer class="footer">
-    <div class="footer-links-grid">
-      
-      <div class="footer-column">
-        <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
-        <a href="/subcategory/sPolitics.html">US Government</a>
-        <a href="/subcategory/sPolitics.html">United Nations</a>
-        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
-        <a href="/subcategory/sPolitics.html">Election</a>
+    <footer class="footer">
+      <div class="footer-links-grid">
+        <div class="footer-column">
+          <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
+          <a href="/subcategory/sPolitics.html">US Government</a>
+          <a href="/subcategory/sPolitics.html">United Nations</a>
+          <a href="/subcategory/sPolitics.html">Crime and Justice</a>
+          <a href="/subcategory/sPolitics.html">Election</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="/archives/aBusiness.html"><h4>Business</h4></a>
+          <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
+          <a href="/subcategory/sBusiness.html">Media</a>
+          <a href="/subcategory/sBusiness.html">Markets</a>
+          <a href="/subcategory/sBusiness.html">Technology</a>
+        </div>
+
+        <div class="footer-column">
+          <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
+          <a href="/subcategory/sEntertainment.html">Hollywood</a>
+          <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
+          <a href="/subcategory/sEntertainment.html">Celebrity News</a>
+          <a href="/subcategory/sEntertainment.html">Music</a>
+        </div>
       </div>
 
-      <div class="footer-column">
-        <a href="/archives/aBusiness.html"><h4>Business</h4></a>
-        <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
-        <a href="/subcategory/sBusiness.html">Media</a>
-        <a href="/subcategory/sBusiness.html">Markets</a>
-        <a href="/subcategory/sBusiness.html">Technology</a>
-      </div>
-      
-      <div class="footer-column">
-        <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
-        <a href="/subcategory/sEntertainment.html">Hollywood</a>
-        <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
-        <a href="/subcategory/sEntertainment.html">Celebrity News</a>
-        <a href="/subcategory/sEntertainment.html">Music</a>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
+      <div class="footer-bottom">
         <div class="footer-actions">
-        <a href="/Live/login.html">Watch</a>
-        <span class="divider">|</span>
-        <a href="#" class="btn-signin">Sign in</a>
+          <a href="/Live/login.html">Watch</a>
+          <span class="divider">|</span>
+          <a href="#" class="btn-signin">Sign in</a>
+        </div>
+
+        <hr class="footer-line" />
+
+        <div class="footer-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">About</a>
+        </div>
+
+        <hr class="footer-line" />
+
+        <div class="footer-copywrite">
+          <p>
+            © 2026 Team REKAP. ITIS 4390. Interaction Design Capstone.
+            University of North Carolina at Charlotte.
+          </p>
+        </div>
       </div>
+    </footer>
 
-    <hr class="footer-line">
-
-    <div class="footer-links">
-      <a href="#">Terms of Use</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">About</a>
-    </div>
-
-    <hr class="footer-line">
-    
-    <div class="footer-copywrite">
-        <p>© 2026 Team REKAP. ITIS 4390. Interaction Design Capstone. University of North Carolina at Charlotte.</p>
-    </div>
-
-    </div>
-  </footer>
-
-  <script src="/hamburgerScript.js"></script>
-  <script src="/dash.js"></script>
+    <script src="/hamburgerScript.js"></script>
+    <script src="/dash.js"></script>
     <script src="/theme.js"></script>
-
-
-</body>
+  </body>
 </html>
-        

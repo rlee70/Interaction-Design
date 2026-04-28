@@ -8,6 +8,8 @@
 
 /* DARK MODE VARIABLES*/
 :root {
+  --color-loader: light-dark(#ddd, #555);
+  --color-loader-top: light-dark(crimson, #ff6347);
   --bg-color: #ffffff;
   --text-color: #000000;
   --card-bg: #f4f4f4;
@@ -235,6 +237,19 @@ margin: 0 auto ;
   border-top: 8px solid var(--color-loader-top);
   border-radius: 50%;
   animation: spin 1s linear infinite;
+}
+/* HIDE ELEMENT */
+.hidden {
+  display: none;
+}
+/* SPIN ANIMATION */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 #overlay .search-header {
