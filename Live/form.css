@@ -68,13 +68,12 @@ body.dark-mode {
   --shadow-header:0 2px 4px rgba(255, 255, 255, 0.3);
     --svg-filter-invert:invert(1);
 
-
-  /*color-scheme: dark;*/
 }
 
 .search-icon ,.user-icon {
 filter: var(--svg-filter-invert);
 }
+
 /* BASIC RESET */
 * {
   margin: 0;
