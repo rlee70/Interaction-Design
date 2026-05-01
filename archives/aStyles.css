@@ -336,8 +336,9 @@ margin: 0 auto ;
 .story-card p {
   font-size: 13px;
   line-height: 1.4;
-  margin-left: 30px;
   margin-bottom: 10px;
+  margin-top: 5px;
+  text-align: center;
 }
 
 .story-card:hover {
