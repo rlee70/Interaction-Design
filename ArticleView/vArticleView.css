@@ -34,57 +34,105 @@ body {
 }
 
 /* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #000000;
+  color: white;
+}
 
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #ffffff;
-  transition: 0.4s;
+.header-left {
+  display: flex;
+  align-items:center;
+  gap: 20px;  /*space between menu icon and logo*/
+  text-decoration: none;
+}
+
+.logo {
+  background-color:crimson;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.logo-link{
+  text-decoration: none;
+  display: flex;
+}
+
+.logo-image{
+  height: 30px;
+  width: auto;
+  display: block;
+}
+
+.logo:hover {
+  background-color: #860000;
+  transition: background-color 0.2s ease;
+}
+
+.nav-main {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-main a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-main a:hover {
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .header-right {
   display: flex;
-  justify-content: space-between;
-  /* padding: 10px; */
   align-items: center;
-  height: 100%;
-  width: 20%;
-  gap: 10px;
+  gap: 30px;
 }
 
-.logo-image {
-  height: 56px;
-  width: auto;
-  max-width: 140px;
-  padding: 4px;
-}
-
-.liveButton {
-  background-color: #00fbff;
-  color: #000000;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  font-size: 1.1rem;
+.liv-btn {
+  background-color: crimson;
+  color: white;
+  padding: 6px 12px;
+  font-size: 16px;
   font-weight: bold;
+  border-radius: 4px;
   cursor: pointer;
 }
-
-.liveButton:hover {
+.live-btn:hover {
   transform: scale(1.25);
   transition: 0.2s ease;
 }
 
-.search-icon {
-  width: 36px;
-  height: 36px;
+.liv-btn:hover {
+  background-color: #860000;
+  transition: all 0.2s ease;
+} 
+
+.icon {
+  font-size: 30px;
 }
 
-.user-profile-icon {
-  max-width: 25%;
-  height: 42px;
+.ui-icon {
+  height: 28px;
+  width: auto;
+  display: block;
+  cursor: pointer;
 }
 
+.ui-icon:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+  
+}
 .nav {
   display: flex;
   justify-content: space-between;
