@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // If not logged in go   back to login page
   if (isLoggedIn !== "true" || !storedData) {
-    window.location.href = "login.html";
+    window.location.href = "../login.html";
     return;
   }
 
@@ -26,6 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //deleete session data to simulate logout
     localStorage.removeItem("isLoggedIn");
     alert("Logged out successfully");
-    window.location.href = "/index.html";
+    window.location.href = "../index.html";
   });
 });
