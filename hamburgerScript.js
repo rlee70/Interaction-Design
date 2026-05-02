@@ -87,10 +87,12 @@ li.style.color = "white";
       results.appendChild(li);
     }
 
+    const basePath = '/Interaction-Design/';
+
     matches.forEach((match) => {
       const a = document.createElement("a");
       a.textContent = match.name;
-      a.href = match.url;
+      a.href = basePath + match.url;
       a.style.textDecoration = "none";
       a.style.color = "white";
       results.appendChild(a);
