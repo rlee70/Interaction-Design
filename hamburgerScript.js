@@ -50,7 +50,7 @@ const items = [
   { name: "US Government", url: "subcategory/sPolitics.html" },
   { name: "International Politics", url: "subcategory/sPolitics.html" },
   { name: "Music", url: "subcategory/sEntertainment.html" },
-  { name: "Jump", url: "../index.html" },
+  { name: "Jump", url: "index.html" },
 ];
 
 const searchInput = document.getElementById("search");
