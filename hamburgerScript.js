@@ -1,4 +1,11 @@
 const headerHamburger = document.getElementById("header-hamburger");
+//** 
+// There's something wrong with the search. It only works on the index pageand this is because It needs to be it changed so when 
+// a page is searched rather than it adding on to the current pages url (ex.archives/archives/aEntertainment.html )
+// instead it should default the index page and add onto it (ex.Interaction-Design/subcategory/sBusiness.html)
+//*/
+
+
 
 // Toggle the mobile nav menu
 headerHamburger.addEventListener("click", () => {
