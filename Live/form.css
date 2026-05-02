@@ -195,6 +195,29 @@ body.dark-mode .input-group {
   margin-top: 30px;
 }
 
+.loader {
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  border: 8px solid var(--color-loader);
+  border-top: 8px solid var(--color-loader-top);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+/* HIDE ELEMENT */
+.hidden {
+  display: none;
+}
+/* SPIN ANIMATION */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Base Button Styles */
 .bton {
   padding: 10px 30px;
