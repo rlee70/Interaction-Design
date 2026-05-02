@@ -41,14 +41,14 @@ overlay.addEventListener("click", (event) => {
 
 // FAKE DATA (NO BACKEND)
 const items = [
-  { name: "Politics", url: "/archives/aPolitics.html" },
-  { name: "Business", url: "/archives/aBusiness.html" },
-  { name: "Entertainment", url: "/archives/aEntertainment.html" },
-  { name: "Technology", url: "/subcategory/sBusiness.html" },
-  { name: "US Government", url: "/subcategory/sPolitics.html" },
-  { name: "International Politics", url: "/subcategory/sPolitics.html" },
-  { name: "Music", url: "/subcategory/sEntertainment.html" },
-  { name: "Jump", url: "index.html" },
+  { name: "Politics", url: "archives/aPolitics.html" },
+  { name: "Business", url: "archives/aBusiness.html" },
+  { name: "Entertainment", url: "archives/aEntertainment.html" },
+  { name: "Technology", url: "subcategory/sBusiness.html" },
+  { name: "US Government", url: "subcategory/sPolitics.html" },
+  { name: "International Politics", url: "subcategory/sPolitics.html" },
+  { name: "Music", url: "subcategory/sEntertainment.html" },
+  { name: "Jump", url: "../index.html" },
 ];
 
 const searchInput = document.getElementById("search");
