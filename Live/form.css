@@ -559,19 +559,23 @@ a small {
 }
 
 .liv-btn {
-  background-color: var(--color-crimson);
-  color: var(--color-black);
+  background-color: crimson;
+  color: white;
   padding: 6px 12px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .liv-btn:hover {
-  background-color: var(--color-crimson-dark);
-  transition: all 0.2s ease;
-}
+  transform: scale(1.25);
+  transition: 0.2s ease;
+  text-decoration: none;
+  background-color: #860000;
+} 
+
 .icon {
   font-size: 30px;
 }
