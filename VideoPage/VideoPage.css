@@ -35,7 +35,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* header pragya */
 /* HEADER */
 .header {
   display: flex;
@@ -109,12 +108,16 @@ body {
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .liv-btn:hover {
+  transform: scale(1.25);
+  transition: 0.2s ease;
+  text-decoration: none;
   background-color: #860000;
-  transition: all 0.2s ease;
-}
+} 
+
 
 .icon {
   font-size: 30px;

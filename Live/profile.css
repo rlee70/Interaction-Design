@@ -162,7 +162,6 @@ body {
 }
 
 /* HEADER */
-/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -235,16 +234,16 @@ body {
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
-}
-.live-btn:hover {
-  transform: scale(1.25);
-  transition: 0.2s ease;
+  text-decoration: none;
 }
 
 .liv-btn:hover {
+  transform: scale(1.25);
+  transition: 0.2s ease;
+  text-decoration: none;
   background-color: #860000;
-  transition: all 0.2s ease;
-}
+} 
+
 
 .icon {
   font-size: 30px;
