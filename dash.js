@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // If not logged in go   back to login page
   if (isLoggedIn !== "true" || !storedData) {
-    window.location.href = "Live/login.html";
+    window.location.href = "login.html";
     return;
   }
 
