@@ -119,16 +119,15 @@ body {
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .liv-btn:hover {
+  transition: 0.2s ease;
+  text-decoration: none;
   background-color: #860000;
-  transition: all 0.2s ease;
-}
+} 
 
-.icon {
-  font-size: 30px;
-}
 
 .ui-icon {
   height: 28px;

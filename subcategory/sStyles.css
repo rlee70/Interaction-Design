@@ -107,15 +107,14 @@ body {
   font-weight: bold;
   border-radius: 4px;
   cursor: pointer;
-}
-.live-btn:hover {
-  transform: scale(1.25);
-  transition: 0.2s ease;
+  text-decoration: none;
 }
 
 .liv-btn:hover {
+  transform: scale(1.25);
+  transition: 0.2s ease;
+  text-decoration: none;
   background-color: #860000;
-  transition: all 0.2s ease;
 } 
 
 .icon {
@@ -134,7 +133,6 @@ body {
   transition: opacity 0.2s ease;
   
 }
-
 
 .bar {
   width: 25px;
