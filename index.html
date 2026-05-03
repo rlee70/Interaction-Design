@@ -22,9 +22,9 @@
             <span class="bar"></span>
           </div>
         </button>
-        <a href="index.html" class="logo-link">
+        <a href="/homepage/index.html" class="logo-link">
           <img
-            src="Resources/Images/ui/CNNlogo.png"
+            src="/Resources/Images/ui/CNNlogo.png"
             alt="CNN Homepage"
             class="logo-image"
           />
@@ -32,61 +32,89 @@
       </div>
 
       <nav class="nav-main">
-        <a href="archives/aPolitics.html">Politics</a>
-        <a href="archives/aBusiness.html">Business</a>
-        <a href="archives/aEntertainment.html">Entertainment</a>
+        <a href="/archives/aPolitics.html">Politics</a>
+        <a href="/archives/aBusiness.html">Business</a>
+        <a href="/archives/aEntertainment.html">Entertainment</a>
       </nav>
 
       <div class="header-right">
         <button class="overlay-button" data-overlay-toggle type="button">
           <img
-            src="Resources/Images/ui/search.svg"
+            src="/Resources/Images/ui/search.svg"
             alt="search"
             class="search-icon"
           />
         </button>
-        <a href="Live/live.html"><div class="liv-btn">LIVE</div></a>
-        <button id="theme-toggle" class="overlay-button" type="button" style="border: none; background: transparent; padding: 0;"> 
-          <img src="Resources/Images/ui/dark-light.png" alt="Toggle Dark Mode" class="ui-icon" style="cursor: pointer;">
-        </button> 
-        
-        <a href="Live/profile.html">
+        <a href="/Live/live.html"><div class="liv-btn">LIVE</div></a>
+        <button id="dark-mode-toggle" class="dark-mode" type="button">
           <img
-            src="Resources/Images/ui/user.svg"
+            src="/Resources/Images/ui/dark-light.png"
+            alt="dark-light"
+            class="ui-icon"
+          />
+        </button>
+
+        <a href="/Live/profile.html">
+          <img
+            src="/Resources/Images/ui/user.svg"
             alt="profile"
             class="user-icon"
           />
         </a>
       </div>
     </header>
-
     <div id="overlay">
       <section class="search-section">
         <div class="search-header">
+          <!-- <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">            <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </button>
+            <h2>Search navigation</h2>-->
         </div>
         <input type="text" id="search" placeholder="Search navigation..." />
         <div id="loader" class="loader hidden"></div>
         <ul id="results"></ul>
       </section>
     </div>
-    
+
+    <div id="overlay">
+      <section class="search-section">
+        <div class="search-header">
+          <!-- <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">            <button class="overlay-button close-button" data-overlay-toggle type="button" aria-label="Close search overlay">
+              <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+            </button>
+            <h2>Search navigation</h2>-->
+        </div>
+        <input type="text" id="search" placeholder="Search navigation..." />
+        <div id="loader" class="loader hidden"></div>
+        <ul id="results"></ul>
+      </section>
+    </div>
     <main class="content">
       <div class="main-layout">
         <section class="main-article">
           <h1 style="font-size: 2.6rem">Top Story</h1>
           <div class="main-art-container">
             <img
-              src="Resources/Images/articles/homepageMainArt.png"
+              src="Resources/Images/articles/homePageMainArt.png"
               alt="iranArt"
               class="main-art"
             />
           </div>
-          <small style="margin-left: 4px; color: var(--text-color2); opacity: 0.7;">By Dawg Rain, CNN</small>
-          <a href="ArticleView/vArticleViewP.html">
-            <p style="margin-top: 8px; margin-left: 4px">
-            The war in Iran is in its fourth week: here's what you should know
-            </p>
-          </a>
+          <small style="margin-left: 4px; color: gray">By Dawg Rain, CNN</small>
+          <a href="ArticleView/vArticleViewP.html"
+            ><p style="margin-top: 8px; margin-left: 4px">
+              The war in Iran is in its fourth week: here's what you should know
+            </p></a
+          >
         </section>
 
         <aside class="trending">
@@ -120,23 +148,22 @@
             </li>
           </ul>
         </aside>
-        
         <aside class="live-tab">
           <section class="live-content">
             <div class="live-video">
               <a href="Live/live.html"
-                ><img style="border-radius: 8px"
+                ><img
+                  style="border-radius: 8px"
                   src="Resources/Images/articles/liveVidThumb.png"
                   alt="live video"
                   class="live-video-placeholder"
               /></a>
 
               <p>
-                A 10-minute video essay dissecting the economics of 'Quiet Quitting' has 
-                garnered over 50 million views on professional networking sites this week, 
-                prompting Fortune 500 companies to hastily rewrite their employee retention 
-                policies. 
-                <br>
+                Short description of video: <br />
+
+                Man tests microphone as spectators watch in awe, host listens
+                intently, reporting "I think it's working."
               </p>
             </div>
             <div>
@@ -166,127 +193,133 @@
                 src="Resources/Images/articles/homePageArt.png"
                 alt="macBook prices article"
               />
+
               <figcaption>
                 Apple Announces New its cheapest <br />
                 laptop ever
               </figcaption>
             </figure>
-            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
+            <small>By Jawn Ning, CNN</small>
           </a>
         </span>
         <span class="article">
           <a href="subcategory/sBusiness.html">
             <figure>
               <img
-                src="Resources/Images/articles/homePageArt.png"
+                style="max-height: 150px; max-width: 200px"
+                src="Resources/Images/articles/readingman.jpg"
                 alt="macBook prices article"
               />
+
               <figcaption>
-                Apple Announces New its cheapest <br />
-                laptop ever
+                New business emerges<br /> people are
+                begin to read and what this could mean.
               </figcaption>
             </figure>
-            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
+            <small>By Undare Tacer, CNN</small>
           </a>
         </span>
         <span class="article">
           <a href="subcategory/sBusiness.html">
             <figure>
               <img
-                src="Resources/Images/articles/homePageArt.png"
+                style="max-height: 150px; max-width: 200px"
+                src="Resources/Images/articles/mountain.avif"
                 alt="macBook prices article"
               />
+
               <figcaption>
-                Apple Announces New its cheapest <br />
-                laptop ever
+                'This land belongs to no one' <br />
+                Protesters take to the streets to free this historical landmark.
               </figcaption>
             </figure>
-            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
+            <small>By Carry Tom, CNN</small>
           </a>
         </span>
         <span class="article">
           <a href="subcategory/sBusiness.html">
             <figure>
               <img
-                src="Resources/Images/articles/homePageArt.png"
+                style="max-height: 150px; max-width: 200px"
+                src="Resources/Images/articles/shels.avif"
                 alt="macBook prices article"
               />
+
               <figcaption>
-                Apple Announces New its cheapest <br />
-                laptop ever
+                'I can't read? what about me?' <br />
+                Bill Williamson on new reading business
               </figcaption>
             </figure>
-            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
+            <small>By Joe Leoporson, CNN</small>
           </a>
         </span>
         <span class="article">
           <a href="subcategory/sBusiness.html">
             <figure>
               <img
-                src="Resources/Images/articles/homePageArt.png"
+                style="max-height: 150px; max-width: 200px"
+                src="Resources/Images/articles/bird.avif"
                 alt="macBook prices article"
               />
+
               <figcaption>
-                Apple Announces New its cheapest <br />
-                laptop ever
+                It's official!<br />The last stockphoto ever taken.
               </figcaption>
             </figure>
-            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
+            <small>By Jawn Ning II, CNN</small>
           </a>
         </span>
         <span class="article">
           <a href="subcategory/sBusiness.html">
             <figure>
-              <img
-                src="Resources/Images/articles/homePageArt.png"
+              <img style="max-height: 150px; max-width: 200px"
+                src="Resources/Images/articles/city.avif"
                 alt="macBook prices article"
               />
               <figcaption>
-                Apple Announces New its cheapest <br />
-                laptop ever
+                One of the last standing cityscapes in a country living in the future <br />
               </figcaption>
             </figure>
-            <small style="color: var(--text-color2); opacity: 0.7; position:relative; left: 100px; margin:0;">By Jawn Ning, CNN</small>
+            <small>By Jawn Ning, CNN</small>
           </a>
         </span>
       </div>
     </main>
     <script src="hamburgerScript.js"></script>
-    <script src="theme.js"></script>
   </body>
 
   <footer class="footer">
     <div class="footer-links-grid">
       <div class="footer-column">
-        <a href="archives/aPolitics.html"><h4>Politics</h4></a>
-        <a href="subcategory/sPolitics.html">US Government</a>
-        <a href="subcategory/sPolitics.html">United Nations</a>
-        <a href="subcategory/sPolitics.html">Crime and Justice</a>
-        <a href="subcategory/sPolitics.html">Election</a>
+        <a href="/archives/aPolitics.html"><h4>Politics</h4></a>
+        <a href="/subcategory/sPolitics.html">US Government</a>
+        <a href="/subcategory/sPolitics.html">United Nations</a>
+        <a href="/subcategory/sPolitics.html">Crime and Justice</a>
+        <a href="/subcategory/sPolitics.html">Election</a>
       </div>
 
       <div class="footer-column">
-        <a href="archives/aBusiness.html"><h4>Business</h4></a>
-        <a href="subcategory/sBusiness.html">Gas/Oil Reserves</a>
-        <a href="subcategory/sBusiness.html">Media</a>
-        <a href="subcategory/sBusiness.html">Markets</a>
-        <a href="subcategory/sBusiness.html">Technology</a>
+        <a href="/archives/aBusiness.html"><h4>Business</h4></a>
+        <a href="/subcategory/sBusiness.html">Gas/Oil Reserves</a>
+        <a href="/subcategory/sBusiness.html">Media</a>
+        <a href="/subcategory/sBusiness.html">Markets</a>
+        <a href="/subcategory/sBusiness.html">Technology</a>
       </div>
 
       <div class="footer-column">
-        <a href="archives/aEntertainment.html"><h4>Entertainment</h4></a>
-        <a href="subcategory/sEntertainment.html">Hollywood</a>
-        <a href="subcategory/sEntertainment.html">Oscars 2026</a>
-        <a href="subcategory/sEntertainment.html">Celebrity News</a>
-        <a href="subcategory/sEntertainment.html">Music</a>
+        <a href="/archives/aEntertainment.html"><h4>Entertainment</h4></a>
+        <a href="/subcategory/sEntertainment.html">Hollywood</a>
+        <a href="/subcategory/sEntertainment.html">Oscars 2026</a>
+        <a href="/subcategory/sEntertainment.html">Celebrity News</a>
+        <a href="/subcategory/sEntertainment.html">Music</a>
       </div>
     </div>
 
     <div class="footer-bottom">
       <div class="footer-actions">
-        <a href="Live/live.html">Watch</a>
+        <a href="/Live/live.html">Watch</a>
         <span class="divider">|</span>
-        <a href="../Live/loginForm.html" class="btn-signin">Sign in</a>
+        <a href="Live/signUpForm.html" class="btn-signin">Sign in</a>
       </div>
 
       <hr class="footer-line" />
