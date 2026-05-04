@@ -127,7 +127,10 @@ a:visited {
   color: inherit;
   text-decoration: none;
 }
-
+.live-tab a{
+  text-decoration: none;
+  color: var(--text-color2);
+}
 .trending a:hover,
 .live-tab a:hover,
 .main-article a p:hover {
