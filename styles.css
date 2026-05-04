@@ -37,8 +37,8 @@
   --text-color2: light-dark(#000000, #000000);
   --color-hover: light-dark(#ececf6, #ececf6db);
   --color-blue: light-dark(#0000ff, #ccccff);
-  --color-crimson: light-dark(rgba(220, 20, 60, 0.89), #ff6347);
-  --color-crimson-dark: light-dark(#860000, #ff5a30);
+  --color-crimson: light-dark(rgba(220, 20, 60, 0.89), rgb(182, 17, 50));
+  --color-crimson-dark: light-dark(#860000, #860000);
   --color-gray-border: light-dark(#e0e0e0, #555);
   --color-gray-bg: light-dark(#f7f7fa, #bbb);
   --color-gray-hover: light-dark(#ececf6, #555);
@@ -89,7 +89,6 @@
 
 /* DARK MODE VARIABLES (Active when toggled) */
 
-
 /* BASE STYLES */
 body {
   font-family: Arial, sans-serif;
@@ -105,12 +104,11 @@ h1,
 h2,
 h3 {
   margin-bottom: 16px;
-  color: var(--text-color2); 
+  color: var(--text-color2);
 }
 
 /* ICONS */
 .dark-mode {
-
   filter: var(--svg-filter-invert);
 }
 .bar {
@@ -134,7 +132,7 @@ a:visited {
 .live-tab a:hover,
 .main-article a p:hover {
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 4px;
   color: var(--color-crimson);
   transition: color 0.2s ease;
 }
@@ -378,8 +376,7 @@ a small {
   transition: 0.2s ease;
   text-decoration: none;
   background-color: #860000;
-} 
-
+}
 
 .icon {
   font-size: 30px;
@@ -433,12 +430,12 @@ a small {
   border-radius: 8px;
   box-shadow: var(--shadow-trending);
   border: 1.5px solid #e0e0e0;
-  order: -1;  
+  order: -1;
   transition: box-shadow 0.2s;
 }
 
 .trending:hover {
-  box-shadow: var(--shadow-trending-hover); 
+  box-shadow: var(--shadow-trending-hover);
 }
 
 ul li {
