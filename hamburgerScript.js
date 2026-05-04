@@ -1,7 +1,5 @@
 const headerHamburger = document.getElementById("header-hamburger");
 
-
-
 // Toggle the mobile nav menu
 headerHamburger.addEventListener("click", () => {
   const nav = document.querySelector(".nav-main");
@@ -12,15 +10,17 @@ headerHamburger.addEventListener("click", () => {
 
 const overlay = document.getElementById("overlay");
 const overlayButtons = document.querySelectorAll("[data-overlay-toggle]");
+const header = document.querySelector(".header");
 
 function setOverlayVisible(visible) {
   overlay.style.display = visible ? "flex" : "none";
-  const closeHamburger = document.querySelector(
-      "#overlay .close .hamburger",
-  );
+  overlay.classList.toggle("overlay-shadow", visible);
+  if (header) {
+    header.classList.toggle("no-shadow", visible);
+  }
+  const closeHamburger = document.querySelector("#overlay .close .hamburger");
   if (closeHamburger) {
     closeHamburger.classList.toggle("active", visible);
-    
   }
   const mainHamburgerIcon = headerHamburger.querySelector(".hamburger");
   if (mainHamburgerIcon) {
@@ -60,7 +60,6 @@ const loader = document.getElementById("loader");
 let searchTimeout;
 
 searchInput.addEventListener("input", () => {
-  
   results.innerHTML = "";
   //shows loader
   loader.classList.remove("hidden");
@@ -78,11 +77,11 @@ searchInput.addEventListener("input", () => {
     if (matches.length === 0 && query !== "") {
       const li = document.createElement("li");
       li.textContent = "No results found";
-li.style.color = "white";
+      li.style.color = "white";
       results.appendChild(li);
     }
 
-    const basePath = '/Interaction-Design/';
+    const basePath = "/Interaction-Design/";
 
     matches.forEach((match) => {
       const a = document.createElement("a");
@@ -92,7 +91,7 @@ li.style.color = "white";
       a.style.color = "white";
       results.appendChild(a);
     });
-  }, 300); 
+  }, 300);
 });
 
 //darkmode toggle
@@ -100,24 +99,24 @@ li.style.color = "white";
 let root = document.querySelector(":root");
 const darkModeButton = document.getElementById("dark-mode-toggle");
 
-darkModeButton.addEventListener('click', (e) => {
+darkModeButton.addEventListener("click", (e) => {
   e.preventDefault();
-//toggles DARK  for root element
-  document.documentElement.classList.toggle('dark');
+  //toggles DARK  for root element
+  document.documentElement.classList.toggle("dark");
   // keep in localStorage to keep consistency across pages
-  if (document.documentElement.classList.contains('dark')) {
-    localStorage.setItem('theme', 'dark');
+  if (document.documentElement.classList.contains("dark")) {
+    localStorage.setItem("theme", "dark");
   } else {
-    localStorage.setItem('theme', 'light');
+    localStorage.setItem("theme", "light");
   }
 });
 
 // On page load, set theme from localStorage if available
-window.addEventListener('DOMContentLoaded', () => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark') {
-    document.documentElement.classList.add('dark');
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.documentElement.classList.add("dark");
   } else {
-    document.documentElement.classList.remove('dark');
+    document.documentElement.classList.remove("dark");
   }
 });
